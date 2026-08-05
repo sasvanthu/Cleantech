@@ -89,7 +89,7 @@
             <div class="tp-slider-active swiper-container">
                 <div class="swiper-wrapper">
                     <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-bg" data-background="assets/img/slider/topup-1.jpg"></div>
+                        <div class="slide-bg" data-background="assets/img/hero-1.png"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                     <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-bg" data-background="assets/img/slider/slider-2.jpg"></div>
+                        <div class="slide-bg" data-background="assets/img/hero-2.png"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
@@ -132,7 +132,7 @@
 
 
                     <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-bg" data-background="assets/img/slider/slider-3.jpg"></div>
+                        <div class="slide-bg" data-background="assets/img/hero-3.png"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
@@ -733,7 +733,7 @@
                                     <div class="col-xl-6 col-md-6 mb-30">
                                         <div class="custom-premium-card wow fadeInUp" data-wow-delay=".7s">
                                             <div class="custom-img-container">
-                                                <img src="assets/img/pricing/pricing-1.jpg" class="img w-100" style="height: 250px; object-fit: cover;" alt="Pressure Washers and Vacuum Cleaners">
+                                                <img src="assets/img/pricing/pricing-2.jpg" class="img w-100" style="height: 250px; object-fit: cover;" alt="Pressure Washers and Vacuum Cleaners">
                                                 <div class="custom-title-badge">
                                                     <h3>Pressure Washers & <span>Vacuum Cleaners</span></h3>
                                                 </div>
