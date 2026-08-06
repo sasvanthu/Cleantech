@@ -108,12 +108,12 @@
                             <div class="accordion-item mb-3 border-0 shadow-sm rounded">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="font-weight: 600; font-family: 'Outfit', sans-serif;">
-                                        What are the best commercial and industrial cleaning services in Chennai?
+                                        Where can I buy the best commercial and industrial cleaning equipment in Chennai?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body text-muted">
-                                        Kleanmax Pro is widely recognized for delivering the best commercial and industrial cleaning services in Chennai. Our expert team specializes in deep cleaning offices, factories, warehouses, and corporate facilities across the city. We utilize advanced techniques and modern equipment to ensure your workspace remains spotless, hygienic, and perfectly maintained.
+                                        Kleanmax Pro is widely recognized for delivering the best commercial and industrial cleaning equipment sales in Chennai. We offer top-tier auto scrubbers, sweepers, and vacuum cleaners perfectly suited for offices, factories, warehouses, and corporate facilities across the city to ensure your workspace remains spotless and flawlessly maintained.
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body text-muted">
-                                        If you need to rent professional cleaning equipment in Chennai, Kleanmax Pro offers a premium fleet of auto scrubbers, sweepers, and vacuum cleaners. Our cost-effective rental plans include daily, weekly, and long-term options, complete with zero maintenance costs, ensuring your facility stays clean without the burden of heavy machinery investments.
+                                        If you need to rent professional cleaning equipment in Chennai, Kleanmax Pro offers a premium fleet of auto scrubbers, sweepers, and vacuum cleaners. Our cost-effective equipment rental plans include daily, weekly, and long-term options, complete with zero maintenance costs, ensuring your facility stays clean without heavy machinery investments.
                                     </div>
                                 </div>
                             </div>
@@ -136,12 +136,12 @@
                             <div class="accordion-item mb-3 border-0 shadow-sm rounded">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-weight: 600; font-family: 'Outfit', sans-serif;">
-                                        Do you provide eco-friendly deep cleaning solutions for offices in Chennai?
+                                        Do you provide eco-friendly cleaning machines for offices in Chennai?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body text-muted">
-                                        Yes, we provide highly effective, eco-friendly deep cleaning solutions tailored for offices and commercial properties throughout Chennai. Our professional cleaning staff exclusively uses environmentally safe, non-toxic products that aggressively eliminate dirt and bacteria while safeguarding the health of your employees and minimizing the overall environmental footprint of your business operations.
+                                        Yes, we provide highly effective, eco-friendly cleaning machines and equipment tailored for offices and commercial properties throughout Chennai. Our premium cleaning machinery sales and rentals utilize advanced technology that aggressively eliminates dirt while drastically minimizing the overall environmental footprint and water consumption of your business operations.
                                     </div>
                                 </div>
                             </div>
@@ -164,12 +164,12 @@
                             <div class="accordion-item mb-3 border-0 shadow-sm rounded">
                                 <h2 class="accordion-header" id="headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="font-weight: 600; font-family: 'Outfit', sans-serif;">
-                                        How can I hire the top corporate cleaning agency in Chennai?
+                                        How can I contact the top cleaning equipment supplier in Chennai?
                                     </button>
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                     <div class="accordion-body text-muted">
-                                        Hiring the top corporate cleaning agency in Chennai is simple with Kleanmax Pro. You can easily request a customized quote by filling out the quick inquiry form on our Contact page. Alternatively, call our local Chennai support team directly to discuss your specific industrial or commercial facility cleaning requirements today.
+                                        Contacting the top cleaning equipment supplier in Chennai is simple with Kleanmax Pro. You can easily request a customized quote for machine sales, rentals, or servicing by filling out the quick inquiry form on our Contact page. Alternatively, call our local Chennai support team directly to discuss your requirements today.
                                     </div>
                                 </div>
                             </div>
