@@ -872,7 +872,7 @@ class KleanMx extends Helper {
             // Replace the URL below with your own Google Apps Script URL
             // (See setup guide below)
             // ============================================================
-            $GOOGLE_SHEET_WEBHOOK = 'https://script.google.com/macros/s/AKfycbyXHKiQ2mxzY0eH6LxQaXsxsOFHUr_JKdIpbcgg3knEZ3bkCHiasb419OnsjL0I3LDMQQ/exec';
+            $GOOGLE_SHEET_WEBHOOK = 'https://script.google.com/macros/s/AKfycbyKvhFLg95Sz3gIrtBKhKfNsr8csbLmeikRIh27YDG1mApiKSCkfOWW2XaugpOH3dFk5w/exec';
 
             if ($GOOGLE_SHEET_WEBHOOK !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
                 $payload = json_encode([
