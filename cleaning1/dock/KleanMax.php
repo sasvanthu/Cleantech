@@ -890,6 +890,8 @@ class KleanMx extends Helper {
                 curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
                 curl_setopt($ch, CURLOPT_TIMEOUT, 5); // don't slow down page if Google is slow
                 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // Fixes localhost/Hostinger SSL issues
+                curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); // Fixes localhost/Hostinger SSL issues
                 curl_exec($ch);
                 curl_close($ch);
             }
