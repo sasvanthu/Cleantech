@@ -1836,3 +1836,42 @@ main {
 /* Product Main Image */
 .product-main-img { border-radius: 20px; box-shadow: 0 25px 60px rgba(0,34,68,0.15); width: 100%; object-fit: cover; border: 5px solid #fff; }
 
+/* --- Mobile Alignment Fixes --- */
+@media (max-width: 767px) {
+    /* Hero buttons wrapping */
+    .tp-pricing-tabs-two {
+        display: flex !important;
+        flex-direction: column !important;
+        border-radius: 20px !important;
+        padding: 15px !important;
+        max-width: 300px;
+        margin: 0 auto;
+        gap: 10px;
+        background: #ffffff !important;
+    }
+    .tp-pricing-tabs-two button {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    /* Header menu white pill overflow fix */
+    .tp-header-area-two {
+        margin: 15px 15px 0 15px !important;
+        max-width: calc(100% - 30px) !important;
+        padding: 12px 20px !important;
+        border-radius: 40px !important;
+        width: auto !important;
+    }
+    
+    /* Scroll to Top button overlapping text */
+    .progress-wrap {
+        right: 15px !important;
+        bottom: 15px !important;
+        transform: scale(0.85);
+    }
+    
+    /* Clean up mobile sidebar menu + icon alignment */
+    .mean-container .mean-nav ul li a.mean-expand {
+        border-left: none !important;
+    }
+}
