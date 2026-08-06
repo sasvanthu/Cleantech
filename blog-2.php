@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     
     <style>
         .tp-main-menu-two ul li a:after { display:none; }
@@ -193,7 +194,7 @@
                                 </div>
                             </div>
                             
-                            <img src="assets/img/service/service-3.jpg" alt="Commercial Cleaning Equipment" class="blog-hero-img">
+                            <img src="assets/img/service/blog-2-banner.png" alt="Commercial Cleaning Equipment" class="blog-hero-img">
                             
                             <div class="blog-content-body">
                                 <p>Equipping your facility with professional-grade cleaning machinery is essential for maintaining hygiene and safety standards. However, high-quality industrial scrubbers, sweepers, and polishers require a significant investment. For many facility managers and business owners, the decision ultimately comes down to one question: Should we buy our equipment outright, or is renting the better option?</p>

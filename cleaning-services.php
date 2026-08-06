@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 
     <style>
@@ -98,7 +99,7 @@
                     <div class="col-lg-6">
                         <div class="tp-service-three premium-service-card mb-30 wow fadeInUp" data-wow-delay=".6s">
                             <div class="tp-service-three-img">
-                                <img src="assets/img/service/residential-1.jpg" class="img-fluid" alt="Residential Cleaning">
+                                <img src="assets/img/service/premium-residential-service.png" class="img-fluid" alt="Residential Cleaning">
                                 <div class="tp-service-three-img-icon" style="background-color: #000;">
                                     <i class="flaticon-house-cleaning"></i>
                                 </div>
@@ -115,7 +116,7 @@
                     <div class="col-lg-6">
                         <div class="tp-service-three premium-service-card mb-30 wow fadeInUp" data-wow-delay=".9s">
                             <div class="tp-service-three-img">
-                                <img src="assets/img/service/office-1.jpg" class="img-fluid" alt="Office Cleaning">
+                                <img src="assets/img/service/premium-office-service.png" class="img-fluid" alt="Office Cleaning">
                                 <div class="tp-service-three-img-icon" style="background-color: #000;">
                                     <i class="flaticon-desk"></i>
                                 </div>
@@ -132,7 +133,7 @@
                     <div class="col-lg-6">
                         <div class="tp-service-three premium-service-card mb-30 wow fadeInUp" data-wow-delay="1.2s">
                             <div class="tp-service-three-img">
-                                <img src="assets/img/service/commercial-1.jpg" class="img-fluid" alt="Commercial Cleaning">
+                                <img src="assets/img/service/premium-commercial-service.png" class="img-fluid" alt="Commercial Cleaning">
                                 <div class="tp-service-three-img-icon" style="background-color: #000;">
                                     <i class="flaticon-business-and-trade"></i>
                                 </div>
@@ -149,7 +150,7 @@
                     <div class="col-lg-6">
                         <div class="tp-service-three premium-service-card mb-30 wow fadeInUp" data-wow-delay="1.5s">
                             <div class="tp-service-three-img">
-                                <img src="assets/img/service/factory-1.jpg" class="img-fluid" alt="Factory Cleaning">
+                                <img src="assets/img/service/premium-factory-service.png" class="img-fluid" alt="Factory Cleaning">
                                 <div class="tp-service-three-img-icon" style="background-color: #000;">
                                     <i class="flaticon-window"></i>
                                 </div>
@@ -166,7 +167,7 @@
                     <div class="col-lg-6">
                         <div class="tp-service-three premium-service-card mb-30 wow fadeInUp" data-wow-delay="1.5s">
                             <div class="tp-service-three-img">
-                                <img src="assets/img/service/warehouse-1.jpg" class="img-fluid" alt="Warehouse Cleaning">
+                                <img src="assets/img/service/premium-warehouse-service.png" class="img-fluid" alt="Warehouse Cleaning">
                                 <div class="tp-service-three-img-icon" style="background-color: #000;">
                                     <i class="flaticon-cleaning"></i>
                                 </div>
@@ -183,7 +184,7 @@
                     <div class="col-lg-6">
                         <div class="tp-service-three premium-service-card mb-30 wow fadeInUp" data-wow-delay="1.5s">
                             <div class="tp-service-three-img">
-                                <img src="assets/img/service/industrial-1.jpg" class="img-fluid" alt="Industrial Cleaning">
+                                <img src="assets/img/service/premium-industrial-service.png" class="img-fluid" alt="Industrial Cleaning">
                                 <div class="tp-service-three-img-icon" style="background-color: #000;">
                                     <i class="flaticon-cleaning"></i>
                                 </div>

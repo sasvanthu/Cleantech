@@ -25,6 +25,7 @@ ob_start();
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <style>
         .tp-main-menu-two ul li a:after { display:none; }
@@ -270,10 +271,11 @@ ob_start();
                     <h4 class="tp-service-widget-title">Our Services</h4>
                     <div class="tp-service-widget-list">
                         <ul>
+                            <li><a href="residential-cleaning">Residential Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="office-cleaning">Office Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="commercial-cleaning">Commercial Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="factory-cleaning">Factory Cleaning <i class="fas fa-angle-right"></i></a></li>
-                            <li><a href="https://www.uniquepainters.in/" target="_blank">Painting Services <i class="fas fa-external-link-alt" style="font-size:12px;"></i></a></li>
+                            <li><a href="industrial-cleaning" class="active">Industrial Cleaning <i class="fas fa-angle-right"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -289,7 +291,7 @@ ob_start();
             <div class="col-lg-8">
                 <div class="service-details-content wow fadeInUp" data-wow-delay=".4s">
                     
-                    <img src="assets/img/service/industrial-a1.jpg" alt="Industrial Cleaning Services Chennai" class="img-fluid rounded mb-4 shadow-sm" style="width:100%; max-height:450px; object-fit:cover;">
+                    <img src="assets/img/service/premium-industrial-service.png" alt="Industrial Cleaning Services Chennai" class="img-fluid rounded mb-4 shadow-sm" style="width:100%; max-height:450px; object-fit:cover;">
                     
                     <h2>Expert Industrial Cleaning Services in Chennai</h2>
                     <p>
@@ -329,27 +331,30 @@ ob_start();
                         </div>
                     </div>
 
+                    <h3>Expert Industrial Cleaning Contractors in Chennai</h3>
+                    <p>Large-scale industrial facilities require specialized cleaning techniques that standard janitorial services cannot provide. As leading <strong>industrial cleaning contractors in Chennai</strong>, we handle everything from heavy machinery cleaning to expansive warehouse sweeping. We understand that downtime is costly, which is why our highly trained crew operates efficiently during your off-hours to deliver zero-downtime cleaning. Our strict adherence to safety protocols ensures that even the most hazardous industrial environments are cleaned securely and effectively.</p>
+
                     <h3>Why Kleanmax Pro is Chennai's First Choice</h3>
                     <div class="row text-center mt-4 mb-5">
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-verified"></i>
-                                <h5>Safety Certified</h5>
-                                <p class="small" style="margin-bottom:0;">Fully PPE-equipped staff trained for hazard environments.</p>
+                                <i class="fas fa-user-shield"></i>
+                                <h5>Verified Staff</h5>
+                                <p class="small" style="margin-bottom:0;">Background-checked and rigorously trained professionals.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-cleaning"></i>
-                                <h5>Advanced Gear</h5>
-                                <p class="small" style="margin-bottom:0;">We utilize powerful industrial-grade scrubbers and vacuums.</p>
+                                <i class="fas fa-leaf"></i>
+                                <h5>Eco-Solutions</h5>
+                                <p class="small" style="margin-bottom:0;">Non-toxic chemicals for a safer environment.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-time"></i>
-                                <h5>24/7 Availability</h5>
-                                <p class="small" style="margin-bottom:0;">We schedule cleaning around your production shifts.</p>
+                                <i class="fas fa-clock"></i>
+                                <h5>Flexible Timing</h5>
+                                <p class="small" style="margin-bottom:0;">After-hours or weekend cleaning to avoid disruption.</p>
                             </div>
                         </div>
                     </div>

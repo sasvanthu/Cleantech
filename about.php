@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 
     <style>

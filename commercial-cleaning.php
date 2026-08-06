@@ -25,6 +25,7 @@ ob_start();
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <style>
         .tp-main-menu-two ul li a:after { display:none; }
@@ -270,10 +271,11 @@ ob_start();
                     <h4 class="tp-service-widget-title">Our Services</h4>
                     <div class="tp-service-widget-list">
                         <ul>
+                            <li><a href="residential-cleaning">Residential Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="office-cleaning">Office Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="commercial-cleaning" class="active">Commercial Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="factory-cleaning">Factory Cleaning <i class="fas fa-angle-right"></i></a></li>
-                            <li><a href="https://www.uniquepainters.in/" target="_blank">Painting Services <i class="fas fa-external-link-alt" style="font-size:12px;"></i></a></li>
+                            <li><a href="industrial-cleaning">Industrial Cleaning <i class="fas fa-angle-right"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -289,7 +291,7 @@ ob_start();
             <div class="col-lg-8">
                 <div class="service-details-content wow fadeInUp" data-wow-delay=".4s">
                     
-                    <img src="assets/img/service/commercial-cleaning-1.jpg" alt="Commercial Cleaning Services Chennai" class="img-fluid rounded mb-4 shadow-sm" style="width:100%; max-height:450px; object-fit:cover;">
+                    <img src="assets/img/service/premium-commercial-service.png" alt="Commercial Cleaning Services Chennai" class="img-fluid rounded mb-4 shadow-sm" style="width:100%; max-height:450px; object-fit:cover;">
                     
                     <h2>Trusted Commercial Cleaning Company in Chennai</h2>
                     <p>
@@ -329,25 +331,28 @@ ob_start();
                         </div>
                     </div>
 
+                    <h3>Comprehensive Commercial Building Maintenance in Chennai</h3>
+                    <p>Retail stores, malls, and commercial complexes experience high foot traffic that quickly wears down floors and accumulates dirt. Our specialized <strong>commercial cleaning services in Chennai</strong> are designed to handle these demanding environments. We provide flexible cleaning schedules—including after-hours and weekend services—to ensure zero disruption to your daily operations. From sparkling shopfront windows to meticulously sanitized restrooms, our commercial health standard compliance guarantees an inviting atmosphere for your customers.</p>
+
                     <h3>Why Kleanmax Pro is Chennai's First Choice</h3>
                     <div class="row text-center mt-4 mb-5">
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-verified"></i>
-                                <h5>Trained Staff</h5>
+                                <i class="fas fa-user-shield"></i>
+                                <h5>Verified Staff</h5>
                                 <p class="small" style="margin-bottom:0;">Background-checked and rigorously trained professionals.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-cleaning"></i>
+                                <i class="fas fa-leaf"></i>
                                 <h5>Eco-Solutions</h5>
-                                <p class="small" style="margin-bottom:0;">Non-toxic chemicals for a safer office atmosphere.</p>
+                                <p class="small" style="margin-bottom:0;">Non-toxic chemicals for a safer environment.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-time"></i>
+                                <i class="fas fa-clock"></i>
                                 <h5>Flexible Timing</h5>
                                 <p class="small" style="margin-bottom:0;">After-hours or weekend cleaning to avoid disruption.</p>
                             </div>

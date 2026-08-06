@@ -28,6 +28,7 @@ ob_start();
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <style>
         .tp-main-menu-two ul li a:after { display:none; }
@@ -301,20 +302,15 @@ ob_start();
                             
                             <!-- Hero Images -->
                             <div class="row mb-30">
-                                <div class="col-sm-6">
-                                    <div class="premium-product-img mb-30">
-                                        <img src="assets/img/service/sales-3.jpg" alt="Cleaning Equipments Servicing" class="img-fluid rounded">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="premium-product-img mb-30">
-                                        <img src="assets/img/service/sales-4.jpg" alt="Cleaning Equipments Servicing" class="img-fluid rounded">
+                                <div class="col-12">
+                                    <div class="premium-product-img mb-30" style="padding: 0;">
+                                        <img src="assets/img/service/premium-service-banner.png" alt="Cleaning Equipments Servicing" class="img-fluid rounded" style="max-height: 450px; width: 100%; object-fit: cover;">
                                     </div>
                                 </div>
                             </div>
 
                             <h2 class="tp-section-title heading-color-black mb-20" style="font-size: 32px;">Cleaning Equipment's Service in Chennai</h2>
-                            <p class="mb-20" style="font-size: 16px; color: #555; line-height: 1.8;">We provide cleaning machinery service at the best prices. We have the capability to manufacture some of the spares in our service centre, making our spare parts cost very competitive. We also undertake multibrand machine service backups.</p>
+                            <p class="mb-20" style="font-size: 16px; color: #555; line-height: 1.8;">Minimize operational downtime with our expert industrial cleaning equipment repair and maintenance services across Chennai. We provide fast, reliable servicing for all major brands, utilizing our state-of-the-art in-house facility to manufacture critical spare parts at highly competitive prices. From on-site emergency repairs for ride-on scrubbers to comprehensive Annual Maintenance Contracts (AMC) for heavy-duty sweepers, our highly trained technicians ensure your commercial cleaning machinery always operates at peak efficiency and hygiene.</p>
                             
                             <h5 class="mb-3 mt-4" style="color: #001224; font-weight: 700;">Our Advantage:</h5>
                             <ul class="premium-check-list mb-40"> 
@@ -324,107 +320,89 @@ ob_start();
 
                             <h3 class="tp-service-details-subtitle mb-40">Our Range of Products</h3>
 
-                            <!-- Product 1 -->
+                            <!-- Product 1: Auto Scrubber -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/auto-scrubber.jpg" alt="Auto scrubbing machine">
+                                            <img src="assets/img/service/auto-scrubber.jpg" alt="Auto Scrubber Service">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
                                         <h3 class="tp-service-details-subtitle kleanmax-subtitle">Auto Scrubber</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>Auto scrubbers, otherwise called automatic scrubbers</strong>, are cleaning tools used for scrubbing floors efficiently and effectively.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Commercial & Industrial</li>
-                                            <li>Hospitals, Hotels & Malls</li>
-                                            <li>Where ever more then 6000 sqft area its very useful.</li>
-                                        </ul>
+                                        <p class="mb-10" style="color: #555;">Walk-behind auto scrubber servicing available for all brands. We fix brushes, motors, squeegees, batteries, and water tanks with genuine parts.</p>
+                                        <a href="product-auto-scrubber" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Product 2 -->
+                            <!-- Product 2: Ride on Scrubber -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center flex-row-reverse">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/floor-scrubber.jpg" alt="Floor scrubbing machine">
+                                            <img src="assets/img/service/floor-scrubber.jpg" alt="Ride on Scrubber Service">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
-                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Ride on Scrubber</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>Floor scrubber</strong> is a walk-behind or ride-on machine to clean larger floor areas by injecting water with cleaning solution, scrubbing, and lifting the residuals off the floor.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Quicker Dry Times.</li>
-                                            <li>Greater Cleaning Efficiency.</li>
-                                            <li>Easier Cleaning Process.</li>
-                                        </ul>
+                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Ride-On Scrubber</h3>
+                                        <p class="mb-10" style="color: #555;">Full service and AMC for ride-on scrubbers. Our technicians handle on-site repairs, preventive maintenance, and parts replacement across Chennai.</p>
+                                        <a href="product-ride-on-scrubber" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Product 3 -->
+                            <!-- Product 3: Ride on Sweeper -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/floor-sweepers.jpg" alt="Industrial ride on floor sweepers">
+                                            <img src="assets/img/service/floor-sweepers.jpg" alt="Ride on Sweeper Service">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
-                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Ride on Sweeper</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>Industrial ride on floor sweepers</strong> are designed for vast sweeping tasks to clean large areas effectively and efficiently with minimal effort.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Dust-Free Operation.</li>
-                                            <li>Easy to maintain and simple to operate.</li>
-                                            <li>Great with light, medium & heavy debris.</li>
-                                        </ul>
+                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Ride-On Sweeper</h3>
+                                        <p class="mb-10" style="color: #555;">Sweeper maintenance including brush replacement, filter cleaning, engine servicing, and full annual maintenance contracts (AMC) available.</p>
+                                        <a href="product-ride-on-sweeper" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Product 4 -->
+                            <!-- Product 4: Single Disc Scrubber -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center flex-row-reverse">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/single-disc-scrubbers.jpg" alt="Single disc scrubbers">
+                                            <img src="assets/img/service/single-disc-scrubbers.jpg" alt="Single Disc Scrubber Service">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
-                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Single disc scrubber machine</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>Single disc scrubbers</strong> are the most versatile, multipurpose machines for maintenance and cleaning of all types of floors and carpets.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Commercial & Industrial</li>
-                                            <li>Hospitals, Hotels, Malls</li>
-                                            <li>Great for 3000 sqft+ areas.</li>
-                                        </ul>
+                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Single Disc Scrubber</h3>
+                                        <p class="mb-10" style="color: #555;">Single disc machine servicing for all floor types. We supply genuine pads, brushes, and handle motor faults and cable repairs on-site.</p>
+                                        <a href="product-single-disc-scrubber" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Product 5 -->
+                            <!-- Product 5: Vacuum Cleaner -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/vacuum-cleaner.jpg" alt="Vacuum Cleaner">
+                                            <img src="assets/img/service/vacuum-cleaner.jpg" alt="Industrial Vacuum Cleaner Service">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
-                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Vacuum Cleaner</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>A Vacuum Cleaner</strong> is a device that causes suction in order to suck up dirt/particles and dust from floors, upholstery, draperies and more.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Mostly required in all places.</li>
-                                        </ul>
+                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Industrial Vacuum Cleaner</h3>
+                                        <p class="mb-10" style="color: #555;">Vacuum cleaner repair and servicing — motor overhaul, hose replacement, HEPA filter change, and suction power restoration for all brands.</p>
+                                        <a href="product-vacuum-cleaner" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
+                            </div>
+                            
+                            <div class="mt-4 mb-4">
+                                <h3 class="tp-service-details-subtitle">Expert Cleaning Equipment Maintenance & Service in Chennai</h3>
+                                <p style="color: #555;">To keep your operations running smoothly, industrial cleaning equipment requires regular professional maintenance. At Klean Max Pro, we provide comprehensive repair and maintenance services for all major brands of auto scrubbers, sweepers, and vacuum cleaners across Chennai. Our rapid-response technicians ensure minimal downtime by fixing issues on-site with genuine spare parts. Regular servicing not only extends the lifespan of your machines but also ensures they operate at peak efficiency, safeguarding your facility’s hygiene standards.</p>
                             </div>
                             
                             <h3 class="tp-service-details-subtitle mt-50">Why Klean Max Pro is Chennai's First Choice</h3>

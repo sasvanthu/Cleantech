@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 
     <style>
@@ -221,7 +222,8 @@
                             <li><a href="residential-cleaning" class="active">Residential Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="office-cleaning">Office Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="commercial-cleaning">Commercial Cleaning <i class="fas fa-angle-right"></i></a></li>
-                            <li><a href="deep-cleaning">Deep Cleaning <i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="factory-cleaning">Factory Cleaning <i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="industrial-cleaning">Industrial Cleaning <i class="fas fa-angle-right"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -237,7 +239,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="tp-service-details-img mb-30">
-                                        <img src="assets/img/service/residential-cleaning-1.jpg" class="img-fluid rounded mb-4 shadow-sm" style="width:100%; max-height:450px; object-fit:cover;" alt="Residential Cleaning">
+                                        <img src="assets/img/service/premium-residential-service.png" class="img-fluid rounded mb-4 shadow-sm" style="width:100%; max-height:450px; object-fit:cover;" alt="Residential Cleaning">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -262,6 +264,9 @@ Our decade of cleaning industry experience give us an edge when it comes to maki
                                     <li>Empty trash &amp; replace bag, Clean tissue holder &amp; towel racks</li>
                                     <li>Vacuum &amp; scrub/disinfect floor, including corners</li>
                                 </ul>
+                            <h3>Health Benefits of Deep House Cleaning in Chennai</h3>
+                            <p>Living in a bustling city like Chennai brings its share of dust, pollution, and humidity. Regular mopping is often not enough to remove deep-seated allergens and grime. Our professional <strong>home sanitization in Chennai</strong> goes beyond surface cleaning. We focus on eliminating bacteria, dust mites, and mold that thrive in high-humidity environments, offering a safe, allergy-free home for your kids and pets. Whether you need a seasonal refresh or comprehensive <strong>move-in/move-out cleaning services</strong>, our eco-friendly solutions ensure your family breathes easier.</p>
+                            
                             <h3>Why Klean Max Pro is Chennai's First Choice</h3>
                             <div class="row text-center mt-4 mb-5">
                                 <div class="col-md-4 mb-3">
@@ -273,7 +278,7 @@ Our decade of cleaning industry experience give us an edge when it comes to maki
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-cleaning"></i>
+                                        <i class="fas fa-leaf"></i>
                                         <h5>Eco-Solutions</h5>
                                         <p class="small" style="margin-bottom:0;">Non-toxic chemicals for a safer office atmosphere.</p>
                                     </div>

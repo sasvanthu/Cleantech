@@ -28,6 +28,7 @@ ob_start();
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <style>
         .tp-main-menu-two ul li a:after { display:none; }
@@ -301,20 +302,15 @@ ob_start();
                             
                             <!-- Hero Images -->
                             <div class="row mb-30">
-                                <div class="col-sm-6">
-                                    <div class="premium-product-img mb-30">
-                                        <img src="assets/img/service/sales-img-1.jpg" alt="Cleaning Equipments Sales" class="img-fluid rounded">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="premium-product-img mb-30">
-                                        <img src="assets/img/service/sales-img-2.jpg" alt="Cleaning Equipments Sales" class="img-fluid rounded">
+                                <div class="col-12">
+                                    <div class="premium-product-img mb-30" style="padding: 0;">
+                                        <img src="assets/img/service/premium-sales-banner.png" alt="Cleaning Equipments Sales" class="img-fluid rounded" style="max-height: 450px; width: 100%; object-fit: cover;">
                                     </div>
                                 </div>
                             </div>
 
                             <h2 class="tp-section-title heading-color-black mb-20" style="font-size: 32px;">Cleaning Equipment's Sales Service in Chennai</h2>
-                            <p class="mb-20" style="font-size: 16px; color: #555; line-height: 1.8;">We sell multibrand machines (Roots, Taski, Karcher, Charnock, Stihl & Clearock) and we have tie up with all leading brands in the market. we have both low to high price machines.</p>
+                            <p class="mb-20" style="font-size: 16px; color: #555; line-height: 1.8;">Discover the ultimate industrial and commercial cleaning solutions with our premium range of multibrand cleaning equipment for sale in Chennai. We are authorized dealers for top global brands like Roots, Taski, Karcher, Charnock, Stihl, and Clearock. Whether you need an affordable walk-behind scrubber or a heavy-duty ride-on sweeper for massive warehouse spaces, we provide cost-effective machines that ensure peak hygiene standards, maximum operational efficiency, and long-lasting performance for your business.</p>
                             
                             <h5 class="mb-3 mt-4" style="color: #001224; font-weight: 700;">Our Advantage:</h5>
                             <ul class="premium-check-list mb-40"> 
@@ -323,109 +319,89 @@ ob_start();
 
                             <h3 class="tp-service-details-subtitle mb-40">Our Range of Products</h3>
 
-                            <!-- Product 1 -->
+                            <!-- Product 1: Auto Scrubber -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/auto-scrubber.jpg" alt="Auto scrubbing machine">
+                                            <img src="assets/img/service/auto-scrubber.jpg" alt="Auto Scrubber Machine">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
                                         <h3 class="tp-service-details-subtitle kleanmax-subtitle">Auto Scrubber</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>Auto scrubbers, otherwise called automatic scrubbers</strong>, are cleaning tools used for scrubbing floors without the hassle of scrubbing the floors with a mop or similar cleaning object. Cleaning is efficient and effective with the use of a scrubber.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Commercial & Industrial</li>
-                                            <li>Hospitals & Hotels</li>
-                                            <li>Malls</li>
-                                            <li>Where ever more then 6000 sqft area its very useful for cleaning and maintain.</li>
-                                        </ul>
+                                        <p class="mb-10" style="color: #555;">Walk-behind machine that scrubs, cleans, and dries floors in a single pass. Ideal for commercial &amp; industrial spaces above 3,000 sqft.</p>
+                                        <a href="product-auto-scrubber" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Product 2 -->
+                            <!-- Product 2: Ride on Scrubber -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center flex-row-reverse">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/floor-scrubber.jpg" alt="Floor scrubbing machine">
+                                            <img src="assets/img/service/floor-scrubber.jpg" alt="Ride on Scrubber Machine">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
-                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Ride on Scrubber</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>Floor scrubber</strong> is a floor cleaning device. It can be simple tools such as floor mops and floor brushes, or in a form of walk-behind or ride-on machines to clean larger floor areas by injecting water with cleaning solution, scrubbing, and lifting the residuals off the floor.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Quicker Dry Times.</li>
-                                            <li>Greater Cleaning Efficiency.</li>
-                                            <li>Easier Cleaning Process.</li>
-                                        </ul>
+                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Ride-On Scrubber</h3>
+                                        <p class="mb-10" style="color: #555;">Operator-seated machine for massive floor coverage. Covers up to 8,000 m²/hr — ideal for warehouses, airports, and large manufacturing plants.</p>
+                                        <a href="product-ride-on-scrubber" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Product 3 -->
+                            <!-- Product 3: Ride on Sweeper -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/floor-sweepers.jpg" alt="Industrial ride on floor sweepers">
+                                            <img src="assets/img/service/floor-sweepers.jpg" alt="Ride on Floor Sweeper">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
-                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Ride on Sweeper</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>Industrial ride on floor sweepers</strong> are designed for vast sweeping tasks to clean large areas effectively and efficiently with minimal effort. Using a sit on floor sweeper reduces time required to clean large areas, and can guarantee to bring satisfactory results.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Dust-Free Operation.</li>
-                                            <li>No more manual travailing behind a sweeping brush.</li>
-                                            <li>Easy to maintain and simple to operate.</li>
-                                            <li>Great with light, medium & heavy debris.</li>
-                                        </ul>
+                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Ride-On Sweeper</h3>
+                                        <p class="mb-10" style="color: #555;">Heavy-duty sweeper with dust-free filtration for large indoor &amp; outdoor areas. Perfect for construction sites, factory yards, and parking lots.</p>
+                                        <a href="product-ride-on-sweeper" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Product 4 -->
+                            <!-- Product 4: Single Disc Scrubber -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center flex-row-reverse">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/single-disc-scrubbers.jpg" alt="Single disc scrubbers">
+                                            <img src="assets/img/service/single-disc-scrubbers.jpg" alt="Single Disc Scrubber Machine">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
-                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Single disc scrubber machine</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>Single disc scrubbers</strong> are the most versatile, multipurpose and general machines for maintenance and cleaning of all types of floors and carpets. As the name implies, it uses a single rotating disc which works on the floor to clean it.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Commercial & Industrial</li>
-                                            <li>Hospitals, Hotels, Malls</li>
-                                            <li>Where ever more then 3000 sqft area its very useful for cleaning and maintain.</li>
-                                        </ul>
+                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Single Disc Scrubber</h3>
+                                        <p class="mb-10" style="color: #555;">Versatile multi-purpose floor machine that scrubs, polishes, strips, and buffs. Works on marble, tile, vinyl, granite, and carpet.</p>
+                                        <a href="product-single-disc-scrubber" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Product 5 -->
+                            <!-- Product 5: Vacuum Cleaner -->
                             <div class="premium-product-card">
                                 <div class="row align-items-center">
                                     <div class="col-xl-5">
                                         <div class="premium-product-img">
-                                            <img src="assets/img/service/vacuum-cleaner.jpg" alt="Vacuum Cleaner">
+                                            <img src="assets/img/service/vacuum-cleaner.jpg" alt="Industrial Wet Dry Vacuum Cleaner">
                                         </div>
                                     </div>
                                     <div class="col-xl-7">
-                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Vacuum Cleaner</h3>
-                                        <p class="mb-15" style="color: #555;"><strong>A Vacuum Cleaner</strong> is a device that causes suction in order to suck up dirt/particles and dust from floors, upholstery, draperies and more. This machine collect a dust and water in floor most important cleaning machine.</p>
-                                        <p style="font-weight: 700; color: #001224; margin-bottom: 10px;">Usage/ Applications</p>
-                                        <ul class="premium-check-list">
-                                            <li>Mostly this machine is required in all places.</li>
-                                        </ul>
+                                        <h3 class="tp-service-details-subtitle kleanmax-subtitle">Industrial Vacuum Cleaner</h3>
+                                        <p class="mb-10" style="color: #555;">Powerful wet &amp; dry industrial vacuum for post-construction cleanup, liquid spills, and deep carpet extraction. Available with optional HEPA filtration.</p>
+                                        <a href="product-vacuum-cleaner" class="btn-custom mt-3" style="padding: 10px 24px; font-size: 14px;">Learn More</a>
                                     </div>
                                 </div>
+                            </div>
+                            
+                            <div class="mt-4 mb-4">
+                                <h3 class="tp-service-details-subtitle">Premium Industrial Cleaning Machines for Sale in Chennai</h3>
+                                <p style="color: #555;">Investing in high-quality floor cleaning machines is crucial for long-term facility maintenance in Chennai's demanding industrial and commercial sectors. Whether you need a robust industrial sweeper for a large factory in Oragadam or a reliable single disc scrubber for hotel corridors in Guindy, Klean Max Pro is your trusted supplier. We offer top-tier cleaning equipment sales, ensuring every machine delivers maximum durability, high performance, and exceptional ROI for your business.</p>
                             </div>
                             
                             <h3 class="tp-service-details-subtitle mt-50">Why Buy from Klean Max Pro?</h3>

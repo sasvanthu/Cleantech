@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     
     <style>
         .tp-main-menu-two ul li a:after { display:none; }
@@ -173,7 +174,7 @@
                             <div class="blog-img-wrapper">
                                 <a href="blog-1">
                                     <!-- Using placeholder image from existing assets for the blog -->
-                                    <img src="assets/img/service/service-2.jpg" alt="Industrial Floor Scrubbers">
+                                    <img src="assets/img/service/blog-1-banner.png" alt="Industrial Floor Scrubbers">
                                 </a>
                             </div>
                             <div class="blog-content">
@@ -195,7 +196,7 @@
                         <div class="blog-card-premium">
                             <div class="blog-img-wrapper">
                                 <a href="blog-2">
-                                    <img src="assets/img/service/service-3.jpg" alt="Renting Commercial Cleaning Equipment">
+                                    <img src="assets/img/service/blog-2-banner.png" alt="Renting Commercial Cleaning Equipment">
                                 </a>
                             </div>
                             <div class="blog-content">

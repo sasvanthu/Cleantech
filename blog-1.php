@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     
     <style>
         .tp-main-menu-two ul li a:after { display:none; }
@@ -167,7 +168,7 @@
                                 </div>
                             </div>
                             
-                            <img src="assets/img/service/service-2.jpg" alt="Industrial Floor Scrubber in action" class="blog-hero-img">
+                            <img src="assets/img/service/blog-1-banner.png" alt="Industrial Floor Scrubber in action" class="blog-hero-img">
                             
                             <div class="blog-content-body">
                                 <p>When managing a large warehouse or industrial facility, maintaining a clean floor is often viewed purely through the lens of aesthetics. However, professional facility managers know that cleanliness is fundamentally about safety, operational efficiency, and protecting your bottom line. Investing in the right industrial floor scrubber is one of the most impactful decisions you can make for your facility.</p>

@@ -25,6 +25,7 @@ ob_start();
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/klean-premium.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <style>
         .tp-main-menu-two ul li a:after { display:none; }
@@ -269,6 +270,7 @@ ob_start();
                     <h4 class="tp-service-widget-title">Our Specializations</h4>
                     <div class="tp-service-widget-list">
                         <ul>
+                            <li><a href="residential-cleaning">Residential Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="office-cleaning" class="active">Office Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="commercial-cleaning">Commercial Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="factory-cleaning">Factory Cleaning <i class="fas fa-angle-right"></i></a></li>
@@ -288,7 +290,7 @@ ob_start();
             <div class="col-lg-8">
                 <div class="service-details-content wow fadeInUp" data-wow-delay=".4s">
                     <!-- Fixing broken image link by using an existing office cleaning image -->
-                    <img src="assets/img/service/office-cleaning-1.jpg" alt="Professional Office Cleaning Services in Chennai" class="img-fluid rounded mb-4 shadow-sm" style="width:100%; max-height:450px; object-fit:cover;">
+                    <img src="assets/img/service/premium-office-service.png" alt="Professional Office Cleaning Services in Chennai" class="img-fluid rounded mb-4 shadow-sm" style="width:100%; max-height:450px; object-fit:cover;">
                     
                     <h2>Professional Office Cleaning Services In Chennai</h2>
                     <p>
@@ -328,25 +330,28 @@ ob_start();
                         </div>
                     </div>
 
+                    <h3>Boost Productivity with Professional Office Cleaning in Chennai</h3>
+                    <p>A pristine workspace is essential for employee health, morale, and productivity. Our <strong>corporate housekeeping services in Chennai</strong> cater to business parks, corporate offices, and IT hubs across the city. We utilize hospital-grade disinfectants and HEPA-filter vacuums to significantly reduce the spread of germs, resulting in fewer sick days for your team. By maintaining a spotless environment, you not only protect your workforce but also create a powerful, professional first impression for visiting clients and stakeholders.</p>
+
                     <h3>Why Kleanmax Pro is Chennai's First Choice</h3>
                     <div class="row text-center mt-4 mb-5">
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-verified"></i>
-                                <h5>Trained Staff</h5>
+                                <i class="fas fa-user-shield"></i>
+                                <h5>Verified Staff</h5>
                                 <p class="small" style="margin-bottom:0;">Background-checked and rigorously trained professionals.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-cleaning"></i>
+                                <i class="fas fa-leaf"></i>
                                 <h5>Eco-Solutions</h5>
-                                <p class="small" style="margin-bottom:0;">Non-toxic chemicals for a safer office atmosphere.</p>
+                                <p class="small" style="margin-bottom:0;">Non-toxic chemicals for a safer environment.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <div class="tp-service-feature-card">
-                                <i class="flaticon-time"></i>
+                                <i class="fas fa-clock"></i>
                                 <h5>Flexible Timing</h5>
                                 <p class="small" style="margin-bottom:0;">After-hours or weekend cleaning to avoid disruption.</p>
                             </div>
