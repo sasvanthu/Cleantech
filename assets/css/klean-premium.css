@@ -1875,3 +1875,8 @@ main {
         border-left: none !important;
     }
 }
+
+/* Hide mobile menu expand icons */
+.mean-container .mean-nav ul li a.mean-expand {
+    display: none !important;
+}
