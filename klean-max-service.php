@@ -409,21 +409,21 @@ ob_start();
                             <div class="row text-center mt-4">
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-settings"></i>
+                                        <i class="fas fa-tools"></i>
                                         <h5>Expert Technicians</h5>
                                         <p class="small" style="margin-bottom:0;">Trained to repair all major cleaning machinery brands.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-support"></i>
+                                        <i class="fas fa-cogs"></i>
                                         <h5>Genuine Parts</h5>
                                         <p class="small" style="margin-bottom:0;">In-house spares creation lowering costs significantly.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-clock"></i>
+                                        <i class="fas fa-stopwatch"></i>
                                         <h5>Quick Turnaround</h5>
                                         <p class="small" style="margin-bottom:0;">Alternative machines provided during lengthy repairs.</p>
                                     </div>

@@ -270,7 +270,6 @@ ob_start();
                     <h4 class="tp-service-widget-title">Our Specializations</h4>
                     <div class="tp-service-widget-list">
                         <ul>
-                            <li><a href="residential-cleaning">Residential Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="office-cleaning" class="active">Office Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="commercial-cleaning">Commercial Cleaning <i class="fas fa-angle-right"></i></a></li>
                             <li><a href="factory-cleaning">Factory Cleaning <i class="fas fa-angle-right"></i></a></li>

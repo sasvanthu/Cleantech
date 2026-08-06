@@ -408,21 +408,21 @@ ob_start();
                             <div class="row text-center mt-4">
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-desk"></i>
+                                        <i class="fas fa-tags"></i>
                                         <h5>Best Prices</h5>
                                         <p class="small" style="margin-bottom:0;">Competitive pricing on top-brand machinery.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-delivery-box"></i>
+                                        <i class="fas fa-truck"></i>
                                         <h5>Free Delivery</h5>
                                         <p class="small" style="margin-bottom:0;">Zero charges for delivery and installation.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-network"></i>
+                                        <i class="fas fa-play-circle"></i>
                                         <h5>Free Demo</h5>
                                         <p class="small" style="margin-bottom:0;">Complimentary demonstrations before purchase.</p>
                                     </div>

@@ -867,6 +867,34 @@ class KleanMx extends Helper {
 
 		if($mail->send()) {
 
+            // ============================================================
+            // GOOGLE SHEETS INTEGRATION
+            // Replace the URL below with your own Google Apps Script URL
+            // (See setup guide below)
+            // ============================================================
+            $GOOGLE_SHEET_WEBHOOK = 'https://script.google.com/macros/s/AKfycbyXHKiQ2mxzY0eH6LxQaXsxsOFHUr_JKdIpbcgg3knEZ3bkCHiasb419OnsjL0I3LDMQQ/exec';
+
+            if ($GOOGLE_SHEET_WEBHOOK !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+                $payload = json_encode([
+                    'name'    => $data['name'],
+                    'email'   => $data['email'],
+                    'phone'   => $data['phone'],
+                    'date'    => $data['date'],
+                    'message' => $data['message'] ?? '',
+                ]);
+
+                $ch = curl_init($GOOGLE_SHEET_WEBHOOK);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_POST, true);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+                curl_setopt($ch, CURLOPT_TIMEOUT, 5); // don't slow down page if Google is slow
+                curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+                curl_exec($ch);
+                curl_close($ch);
+            }
+            // ============================================================
+
             $secondary = new PHPMailer();
 
             $secondary->From = $this->email;

@@ -23,13 +23,14 @@
                     
                     <li class="menu-item-has-children"><a href="#" style="color: #002244; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: 0.5px;">Other Services</a>
                         <ul class="sub-menu">
-                            <li><a href="residential-cleaning" style="color: #000;">Residential Cleaning</a></li>
+
                             <li><a href="office-cleaning" style="color: #000;">Office Cleaning</a></li>
                             <li><a href="commercial-cleaning" style="color: #000;">Commercial Cleaning</a></li>
                             <li><a href="factory-cleaning" style="color: #000;">Factory Cleaning</a></li>
                             <li><a href="industrial-cleaning" style="color: #000;">Industrial Cleaning</a></li>
                         </ul>
                     </li>
+                    <li><a href="faq" style="color: #002244; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: 0.5px;">FAQ</a></li>
                     <li><a href="blogs" style="color: #002244; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: 0.5px;">Blog</a></li>
                     <li><a href="contact" style="color: #002244; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: 0.5px;">Contact</a></li>
                 </ul>

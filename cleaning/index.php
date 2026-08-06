@@ -475,7 +475,7 @@ using most efficient vacuums and shampoos.</li>
 				</div>	
                  <div class="col-md-5">
 					<h3>Why choose Klean Max for Your Commercial Cleaning?</h3>
-					<p style="text-align:justify">We offer one stop solution for your house and office cleaning services by doing a detailed assessment of your requirement and provide clear cut cleaning solutions. Our Cleaning services in Chennai includes Deep Cleaning Services, Floor Cleaning Services, Carpet Shampooing Service, Office Cleaning & House Cleaning and Residential Cleaning.</p>
+					<p style="text-align:justify">We offer one stop solution for your house and office cleaning services by doing a detailed assessment of your requirement and provide clear cut cleaning solutions. Our Cleaning services in Chennai includes Deep Cleaning Services, Floor Cleaning Services, Carpet Shampooing Service, Office Cleaning & House Cleaning.</p>
 					<a href="#home" class="btn btn-lg btn-primary space20 page-scroll">Book a Cleaning</a>
 				</div>				
 			</div>

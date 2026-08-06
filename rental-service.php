@@ -413,21 +413,21 @@ ob_start();
                             <div class="row text-center mt-4">
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-wallet"></i>
+                                        <i class="fas fa-wallet"></i>
                                         <h5>Cost Effective</h5>
                                         <p class="small" style="margin-bottom:0;">No hefty initial investments. Rent what you need, when you need.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-calendar"></i>
+                                        <i class="fas fa-calendar-alt"></i>
                                         <h5>Flexible Terms</h5>
                                         <p class="small" style="margin-bottom:0;">Short-term, long-term, and even daily rentals available.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <div class="tp-service-feature-card">
-                                        <i class="flaticon-tools"></i>
+                                        <i class="fas fa-wrench"></i>
                                         <h5>Zero Maintenance</h5>
                                         <p class="small" style="margin-bottom:0;">Skip the repair and spares costs, we handle the upkeep.</p>
                                     </div>

@@ -96,23 +96,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="tp-service-three premium-service-card mb-30 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="tp-service-three-img">
-                                <img src="assets/img/service/premium-residential-service.png" class="img-fluid" alt="Residential Cleaning">
-                                <div class="tp-service-three-img-icon" style="background-color: #000;">
-                                    <i class="flaticon-house-cleaning"></i>
-                                </div>
-                            </div>
-                            <div class="tp-service-three-text fix">
-                                <h4 class="tp-service-three-title mb-20"><a href="residential-cleaning">Residential Cleaning</a></h4>
-                                <p class="mb-30">We are specialized in cleaning residential homes in Chennai to topmost perfection and we make your entire home look brand new.</p>
-                                <div class="tp-service-three-text-btn">
-                                    <a href="residential-cleaning" class="yellow-btn"><i class="flaticon-enter"></i> Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-lg-6">
                         <div class="tp-service-three premium-service-card mb-30 wow fadeInUp" data-wow-delay=".9s">
                             <div class="tp-service-three-img">

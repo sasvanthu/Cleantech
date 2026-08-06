@@ -156,17 +156,11 @@
                                 <div class="col-md-6 custom-pad-20">
                                     <div class="tp-contact-form-field select-field-arrow mb-20">
                                         <select name="form_subject" required="">
-                                            <option value="">Select Cleaning Service</option>
-                                        <option value="Residential Cleaning">Residential Cleaning</option>
-                                            <option value="Office Cleaning">Office Cleaning</option>
-                                            <option value="Commercial Cleaning">Commercial Cleaning</option>
-                                            <option value="Deep Cleaning">Deep Cleaning</option>
-                                          
-                                            <option value="Sofa Cleaning">Sofa Cleaning</option>
-                                            <option value="Other Cleaning">Other Cleaning</option>
+                                            <option value="">Select Requirement</option>
                                             <option value="Sales">Sales</option>
-                                            <option value="Rental">Rental</option>
                                             <option value="Service">Service</option>
+                                            <option value="Rentals">Rentals</option>
+                                            <option value="Others">Others</option>
                                         </select>
                                     </div>
                                 </div>

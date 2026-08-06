@@ -34,7 +34,7 @@
                                 <div class="tp-footer-info-logo mb-30">
                                     <a href="index"><img src="assets/img/logo/klean-max-footer-logo.png" class="img-fluid" alt="Klean Max Pro Logo"></a>
                                 </div>
-                                <p style="color: #94a3b8; font-size: 15px; line-height: 1.8; margin-bottom: 25px;">When it comes to cleaning, Klean Max Pro will treat your facility like our own and deliver exceptional results. We provide a range of commercial and residential cleaning services including factory cleaning, carpet cleaning, and industrial cleaning.</p>
+                                <p style="color: #94a3b8; font-size: 15px; line-height: 1.8; margin-bottom: 25px;">When it comes to cleaning, Klean Max Pro will treat your facility like our own and deliver exceptional results. We provide a range of commercial cleaning services including factory cleaning, carpet cleaning, and industrial cleaning.</p>
                                 <a style="color: #FFC000; font-weight: 700; font-size: 15px; display: inline-flex; align-items: center; transition: color 0.3s ease; text-decoration: none;" href="about" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#FFC000'"><i class="flaticon-enter" style="margin-right: 8px;"></i> Read More</a>
                             </div>
                         </div>
@@ -58,6 +58,7 @@
                                 <li style="margin-bottom: 15px;"><a href="klean-max-service" style="color: #cbd5e1; transition: all 0.3s ease; display: inline-flex; align-items: center; text-decoration: none; font-size: 15px;" onmouseover="this.style.color='#FFC000'; this.style.paddingLeft='6px'" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0'">Service</a></li>
                                 <li style="margin-bottom: 15px;"><a href="rental-service" style="color: #cbd5e1; transition: all 0.3s ease; display: inline-flex; align-items: center; text-decoration: none; font-size: 15px;" onmouseover="this.style.color='#FFC000'; this.style.paddingLeft='6px'" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0'">Rental</a></li>
                                 <li style="margin-bottom: 15px;"><a href="about" style="color: #cbd5e1; transition: all 0.3s ease; display: inline-flex; align-items: center; text-decoration: none; font-size: 15px;" onmouseover="this.style.color='#FFC000'; this.style.paddingLeft='6px'" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0'">About Us</a></li>
+                                <li style="margin-bottom: 15px;"><a href="faq" style="color: #cbd5e1; transition: all 0.3s ease; display: inline-flex; align-items: center; text-decoration: none; font-size: 15px;" onmouseover="this.style.color='#FFC000'; this.style.paddingLeft='6px'" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0'">FAQ</a></li>
                                 <li style="margin-bottom: 15px;"><a href="contact" style="color: #cbd5e1; transition: all 0.3s ease; display: inline-flex; align-items: center; text-decoration: none; font-size: 15px;" onmouseover="this.style.color='#FFC000'; this.style.paddingLeft='6px'" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0'">Contact Us</a></li>
                             </ul>
                         </div>
