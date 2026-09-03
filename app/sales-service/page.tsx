@@ -115,7 +115,7 @@ export default function SalesService() {
       <section style={{ background: '#0d0d0d', padding: '80px 0' }}>
         <div className="container">
           {products.map((p, i) => (
-            <div key={p.id} className="wow fadeInUp" data-wow-delay={`${i * 0.1}s`} style={{
+            <div key={p.id} className="premium-sales-grid wow fadeInUp" data-wow-delay={`${i * 0.1}s`} style={{
               display: 'grid',
               gridTemplateColumns: 'auto 1fr 1fr',
               gap: '0',

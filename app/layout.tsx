@@ -39,6 +39,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/animate.min.css" />
         <link rel="stylesheet" href="/assets/css/klean-premium.css" />
         <link rel="stylesheet" href="/assets/css/dark-mode-overrides.css" />
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
       </head>
       <body className="ct-bg-dark">
         <Header />

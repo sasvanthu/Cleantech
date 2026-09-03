@@ -127,7 +127,7 @@ export default function Header() {
             <li><Link href="/" onClick={closeDrawer} style={{ color: '#fff', fontSize: '18px', fontWeight: 600, textDecoration: 'none' }}>Home</Link></li>
 
             <li>
-              <div style={{ color: '#fff', fontSize: '18px', fontWeight: 600, marginBottom: '15px' }}>Services</div>
+              <Link href="/cleaning-services" onClick={closeDrawer} style={{ display: 'block', color: '#fff', fontSize: '18px', fontWeight: 600, marginBottom: '15px', textDecoration: 'none' }}>Services</Link>
               <ul style={{ listStyle: 'none', paddingLeft: '15px', display: 'flex', flexDirection: 'column', gap: '15px', borderLeft: '1px solid rgba(255,255,255,0.1)' }}>
                 <li><Link href="/office-cleaning" onClick={closeDrawer} style={{ color: 'rgba(255,255,255,0.6)', fontSize: '15px', textDecoration: 'none' }}>Office Cleaning</Link></li>
                 <li><Link href="/commercial-cleaning" onClick={closeDrawer} style={{ color: 'rgba(255,255,255,0.6)', fontSize: '15px', textDecoration: 'none' }}>Commercial Cleaning</Link></li>
@@ -137,7 +137,7 @@ export default function Header() {
             </li>
 
             <li>
-              <div style={{ color: '#fff', fontSize: '18px', fontWeight: 600, marginBottom: '15px' }}>Equipment</div>
+              <Link href="/sales-service" onClick={closeDrawer} style={{ display: 'block', color: '#fff', fontSize: '18px', fontWeight: 600, marginBottom: '15px', textDecoration: 'none' }}>Equipment</Link>
               <ul style={{ listStyle: 'none', paddingLeft: '15px', display: 'flex', flexDirection: 'column', gap: '15px', borderLeft: '1px solid rgba(255,255,255,0.1)' }}>
                 <li><Link href="/sales-service" onClick={closeDrawer} style={{ color: 'rgba(255,255,255,0.6)', fontSize: '15px', textDecoration: 'none' }}>Equipment Sales</Link></li>
                 <li><Link href="/cleantech-service" onClick={closeDrawer} style={{ color: 'rgba(255,255,255,0.6)', fontSize: '15px', textDecoration: 'none' }}>Equipment Service</Link></li>

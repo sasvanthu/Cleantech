@@ -78,7 +78,7 @@ export default function About() {
             <div className="col-lg-6">
               <div className="tp-about-text-two wow fadeInUp" data-wow-delay=".7s">
                 <div className="section-title-wrapper mb-20">
-                  <h2 className="tp-section-title-two translate-y--10"><span style={{ color: '#00d4aa' }}>Your Trusted Partner for</span> Commercial Cleaning Equipment Sales & Service in Chennai</h2>
+                  <h2 className="tp-section-title-two translate-y--10"><span style={{ color: '#FF6B00' }}>Your Trusted Partner for</span> Commercial Cleaning Equipment Sales & Service in Chennai</h2>
                 </div>
                 
                 <p className="mb-30" style={{ fontSize: '17px', lineHeight: 1.7, color: '#555' }}>With over 15 years of industry excellence, Cleantech is the leading provider of premium cleaning equipment tailored for commercial and industrial applications across Chennai and Tamil Nadu. Whether you need to purchase or service heavy-duty cleaning machines, we deliver end-to-end solutions that keep your facility spotless and running efficiently.</p>
@@ -112,19 +112,19 @@ export default function About() {
         <div className="container">
           <div className="row text-center text-white g-4">
             <div className="col-md-3 col-6 wow fadeInUp" data-wow-delay=".2s">
-              <h2 style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 900, color: '#00d4aa', fontSize: '48px', margin: 0 }}><span className="stat-counter" data-target="15">0</span>+</h2>
+              <h2 style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 900, color: '#FF6B00', fontSize: 'clamp(36px, 5vw, 48px)', margin: 0 }}><span className="stat-counter" data-target="15">0</span>+</h2>
               <p style={{ color: 'rgba(255,255,255,0.75)', margin: '4px 0 0' }}>Years Experience</p>
             </div>
             <div className="col-md-3 col-6 wow fadeInUp" data-wow-delay=".4s">
-              <h2 style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 900, color: '#00d4aa', fontSize: '48px', margin: 0 }}><span className="stat-counter" data-target="500">0</span>+</h2>
+              <h2 style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 900, color: '#FF6B00', fontSize: 'clamp(36px, 5vw, 48px)', margin: 0 }}><span className="stat-counter" data-target="500">0</span>+</h2>
               <p style={{ color: 'rgba(255,255,255,0.75)', margin: '4px 0 0' }}>Happy Clients</p>
             </div>
             <div className="col-md-3 col-6 wow fadeInUp" data-wow-delay=".6s">
-              <h2 style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 900, color: '#00d4aa', fontSize: '48px', margin: 0 }}><span className="stat-counter" data-target="10">0</span>+</h2>
+              <h2 style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 900, color: '#FF6B00', fontSize: 'clamp(36px, 5vw, 48px)', margin: 0 }}><span className="stat-counter" data-target="10">0</span>+</h2>
               <p style={{ color: 'rgba(255,255,255,0.75)', margin: '4px 0 0' }}>Machine Brands</p>
             </div>
             <div className="col-md-3 col-6 wow fadeInUp" data-wow-delay=".8s">
-              <h2 style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 900, color: '#00d4aa', fontSize: '48px', margin: 0 }}><span className="stat-counter" data-target="24">0</span>/7</h2>
+              <h2 style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 900, color: '#FF6B00', fontSize: 'clamp(36px, 5vw, 48px)', margin: 0 }}><span className="stat-counter" data-target="24">0</span>/7</h2>
               <p style={{ color: 'rgba(255,255,255,0.75)', margin: '4px 0 0' }}>Support Available</p>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function About() {
             <div className="col-lg-8">
               <div className="section-title-wrapper-two mb-60 wow fadeInUp" data-wow-delay=".2s">
                 <h5 className="tp-section-subtitle-three mb-20" style={{ color: '#000' }}>Why Cleantech?</h5>
-                <h2 className="tp-section-title-two mb-20">Why Choose <span style={{ color: '#00d4aa' }}>Cleantech</span></h2>
+                <h2 className="tp-section-title-two mb-20">Why Choose <span style={{ color: '#FF6B00' }}>Cleantech</span></h2>
                 <p>Choose us for our reputation in genuine products, expert technical support and dependable service. For more than 15 years, we've earned a name for quality and reliability.</p>
               </div>
             </div>
@@ -261,14 +261,14 @@ export default function About() {
                 <div className="tp-testimonial tp-abouts-testimonial ml-70">
                   <div className="section-title-wrapper">
                     <div className="mb-20">
-                      <span style={{ display: 'inline-block', padding: '6px 24px', background: '#00d4aa', borderRadius: '30px', color: '#0a1628', letterSpacing: '2px', textTransform: 'uppercase', fontSize: '13px', fontWeight: 700, boxShadow: '0 4px 10px rgba(0,212,170,0.3)' }}>Customer is the King for us</span>
+                      <span style={{ display: 'inline-block', padding: '6px 24px', background: '#FF6B00', borderRadius: '30px', color: '#fff', letterSpacing: '2px', textTransform: 'uppercase', fontSize: '13px', fontWeight: 700, boxShadow: '0 4px 10px rgba(255,107,0,0.3)' }}>Customer is the King for us</span>
                     </div>
                     <h2 className="tp-section-title mb-20 heading-color-black">Our Client Feedback</h2>
                   </div>
                   <div className="tp-testimonial-active swiper-container">
                     <div className="swiper-wrapper">
                       <div className="tp-testimonial-single swiper-slide z-index">
-                        <p className="mb-45" style={{ fontSize: '19px', fontStyle: 'italic', lineHeight: 1.8, color: '#1a202c', background: 'linear-gradient(90deg, rgba(0,212,170,0.08) 0%, transparent 100%)', borderLeft: '5px solid #00d4aa', padding: '25px 30px', borderRadius: '0 10px 10px 0', boxShadow: '0 4px 15px rgba(0,0,0,0.02)' }}>We rented two commercial scrubber dryers from Cleantech for our Chennai warehouse. Their industrial cleaning equipment is top-notch, and the support was excellent from delivery to pickup. The machines were well-maintained and the team was very responsive.</p>
+                        <p className="mb-45" style={{ fontSize: '19px', fontStyle: 'italic', lineHeight: 1.8, color: '#1a202c', background: 'linear-gradient(90deg, rgba(255,107,0,0.08) 0%, transparent 100%)', borderLeft: '5px solid #FF6B00', padding: '25px 30px', borderRadius: '0 10px 10px 0', boxShadow: '0 4px 15px rgba(0,0,0,0.02)' }}>We rented two commercial scrubber dryers from Cleantech for our Chennai warehouse. Their industrial cleaning equipment is top-notch, and the support was excellent from delivery to pickup. The machines were well-maintained and the team was very responsive.</p>
                         <div className="tp-testimonial-author">
                           <div className="tp-testimonial-author-text">
                             <h4 className="tp-testimonial-author-text-name heading-color-black" style={{ fontSize: '22px', color: '#0a1628', fontWeight: 800, marginBottom: '5px' }}>Manoj Prakash</h4>

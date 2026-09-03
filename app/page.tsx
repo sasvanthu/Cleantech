@@ -6,26 +6,6 @@ export default function Home() {
   const typewriterRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    /* ---- Typewriter ---- */
-    const words = ['Equipment Sales', 'Service & AMC', 'Spare Parts', 'Expert Support'];
-    let idx = 0, charIdx = 0, deleting = false;
-    let timeoutId: NodeJS.Timeout;
-    function type() {
-      const el = typewriterRef.current;
-      if (!el) return;
-      const word = words[idx];
-      if (deleting) { el.textContent = word.substring(0, charIdx--); }
-      else { el.textContent = word.substring(0, charIdx++); }
-      let delay = deleting ? 50 : 90;
-      if (!deleting && charIdx > word.length) { delay = 2000; deleting = true; }
-      if (deleting && charIdx < 0) { deleting = false; idx = (idx + 1) % words.length; charIdx = 0; delay = 400; }
-      timeoutId = setTimeout(type, delay);
-    }
-    type();
-    return () => clearTimeout(timeoutId);
-  }, []);
-
-  useEffect(() => {
     /* ---- Scroll Reveal ---- */
     const revealEls = document.querySelectorAll('.hp-reveal');
     const obs = new IntersectionObserver((entries) => {
@@ -114,20 +94,20 @@ export default function Home() {
 
         /* ---- Hero Redesign ---- */
         .hp-hero {
-          min-height: auto;
+          min-height: calc(100vh - 95px);
           background: #050810;
           position: relative;
           overflow: hidden;
           display: flex;
           align-items: center;
-          padding-top: 95px;
+          padding-top: 50px;
           padding-bottom: 20px;
         }
         .hp-hero .ct-container {
-          max-width: 100% !important;
+          max-width: 1400px !important;
           width: 100% !important;
-          padding-left: 4% !important;
-          padding-right: 4% !important;
+          padding-left: 3% !important;
+          padding-right: 3% !important;
         }
         .hp-hero-circuit-bg {
           position: absolute; inset: 0;
@@ -159,7 +139,7 @@ export default function Home() {
 
         .hp-hero-title {
           font-family: 'Space Grotesk', sans-serif;
-          font-size: clamp(38px, 4.8vw, 62px);
+          font-size: clamp(32px, 4.2vw, 56px);
           font-weight: 900;
           color: #fff;
           line-height: 1.1;
@@ -193,7 +173,9 @@ export default function Home() {
         /* ---- 3D Podium ---- */
         .hp-podium-wrapper {
           position: relative;
-          height: 420px; width: 100%;
+          height: 100%;
+          min-height: 480px;
+          width: 100%;
           display: flex; align-items: center; justify-content: center;
           margin-top: 0px;
         }
@@ -224,25 +206,24 @@ export default function Home() {
         }
 
         .hp-podium-machine {
-          position: absolute; bottom: 110px; left: 50%; transform: translateX(-50%);
-          width: 70%; max-width: 450px; z-index: 4;
-          filter: drop-shadow(0 40px 30px rgba(0,0,0,0.8));
+          position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
+          width: 50%; max-width: 380px; z-index: 4;
+          filter: drop-shadow(0 30px 20px rgba(0,0,0,0.8));
           animation: floatPodium 6s ease-in-out infinite;
         }
         @keyframes floatPodium { 0%,100%{ transform: translateX(-50%) translateY(0); } 50%{ transform: translateX(-50%) translateY(-15px); } }
 
-        /* Spec Cards */
         .hp-spec-card {
           position: absolute;
-          background: rgba(16,24,39,0.7); backdrop-filter: blur(15px);
-          border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;
-          padding: 16px; width: 180px; z-index: 5;
-          box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+          background: rgba(8,12,24,0.85); backdrop-filter: blur(20px);
+          border: 1px solid rgba(255,107,0,0.2); border-radius: 16px;
+          padding: 14px 16px; width: 185px; z-index: 10;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,107,0,0.05);
           transition: 0.3s;
         }
-        .hp-spec-card:hover { transform: translateY(-5px); border-color: rgba(255,107,0,0.5); }
-        .hp-spec-card-left { top: 10%; left: -5%; }
-        .hp-spec-card-right { top: -5%; right: 0%; }
+        .hp-spec-card:hover { transform: translateY(-5px); border-color: rgba(255,107,0,0.8); box-shadow: 0 20px 40px rgba(255,107,0,0.15); }
+        .hp-spec-card-left { top: 8%; left: 2%; }
+        .hp-spec-card-right { top: 4%; right: 1%; }
         
         .hp-spec-title { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
         .hp-spec-name { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 12px; }
@@ -272,42 +253,47 @@ export default function Home() {
           display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;
         }
         @media (max-width: 991px) {
-          .hp-hero { padding-top: 120px; padding-bottom: 40px; text-align: center; }
-          .hp-hero-pill { margin: 0 auto 30px; }
-          .hp-hero-title { font-size: 36px; }
-          .hp-hero-sub { font-size: 15px; margin: 0 auto 36px; }
-          .hp-advantage-block { font-size: 20px; text-align: center; margin: 0 auto 40px; }
-          .hp-hero-btns { flex-direction: column; width: 100%; margin: 0 auto; align-items: stretch; }
-          .hp-btn-req, .hp-btn-exp { width: 100%; justify-content: center; }
-          .hp-podium-wrapper { height: 400px; margin-top: 20px; }
-          .hp-podium-base { bottom: 40px; }
+          .hp-hero { padding-top: 85px; padding-bottom: 15px; text-align: center; }
+          .hp-hero .ct-container { padding-left: 20px !important; padding-right: 20px !important; }
+          .hp-hero-pill { margin: 0 auto 20px; padding: 6px 16px; }
+          .hp-hero-title { font-size: 32px; margin-bottom: 12px; }
+          .hp-hero-sub { font-size: 14px; margin: 0 auto 24px; line-height: 1.5; }
+          .hp-advantage-block { font-size: 20px; text-align: center; margin: 0 auto 30px; }
+          .hp-hero-btns { flex-direction: column; width: 100%; margin: 0 auto 30px; align-items: stretch; gap: 12px; }
+          .hp-btn-primary, .hp-btn-ghost { width: 100%; justify-content: center; }
+          .hp-podium-wrapper { height: 350px; margin-top: 0; }
+          .hp-podium-base { bottom: 40px; width: 100%; }
           .hp-podium-layer-1 { height: 100px; }
           .hp-podium-layer-2 { height: 80px; bottom: 20px; }
-          .hp-podium-layer-3 { height: 60px; bottom: 40px; }
+          .hp-podium-layer-3 { height: 60px; bottom: 40px; border-width: 1px; }
           .hp-podium-glow { bottom: 35px; }
-          .hp-podium-machine { bottom: 70px; max-width: 250px; }
-          .hp-spec-card { display: none; } /* Hide floating cards on mobile to prevent overflow */
+          .hp-podium-machine { bottom: 70px; width: 85%; max-width: 280px; }
+          .hp-spec-card { display: none; }
           .hp-circuit-lines { width: 100%; height: 300px; bottom: -50px; }
         }
 
         /* ---- Stats Bar ---- */
         .hp-stats-bar {
           background: #050810;
-          border-top: 1px solid rgba(255,255,255,0.06);
-          border-bottom: 1px solid rgba(255,255,255,0.06);
-          padding: 25px 0;
+          border-top: 1px solid rgba(255,255,255,0.07);
+          padding: 20px 0;
         }
         .hp-stats-grid {
           display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
-          max-width: 1100px; margin: 0 auto; text-align: center;
+          max-width: 1280px; margin: 0 auto; text-align: center;
+          padding: 0 40px;
         }
         .hp-stat-num {
           font-family: 'Space Grotesk', sans-serif;
-          font-size: 42px; font-weight: 900; color: #fff; line-height: 1;
+          font-size: 38px; font-weight: 900; color: #fff; line-height: 1;
         }
         .hp-stat-num span { color: #FF6B00; }
-        .hp-stat-label { font-size: 12px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 6px; }
-        @media(max-width:768px) { .hp-stats-grid { grid-template-columns: repeat(2,1fr); } }
+        .hp-stat-label { font-size: 11px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 4px; }
+        @media(max-width:768px) { 
+          .hp-stats-grid { grid-template-columns: repeat(2,1fr); gap: 15px; padding: 0 16px; } 
+          .hp-stat-num { font-size: 28px; }
+          .hp-stat-label { font-size: 10px; letter-spacing: 1px; }
+        }
 
         /* ---- Core Business ---- */
         .hp-bento-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -508,8 +494,7 @@ export default function Home() {
 
                 <h1 className="hp-hero-title hp-reveal delay-2">
                   Chennai's #1<br />
-                  Cleaning <span className="hp-title-orange">Machines</span><br />
-                  <span ref={typewriterRef} id="ctTypewriter" className="hp-typewriter"></span>
+                  Cleaning <span className="hp-title-orange">Machines</span>
                 </h1>
 
                 <p className="hp-hero-sub hp-reveal delay-3">
@@ -534,7 +519,7 @@ export default function Home() {
                   <div className="hp-spec-card hp-spec-card-left hp-reveal delay-3">
                     <div className="hp-spec-title">Scrubber</div>
                     <div className="hp-spec-name">Cleantech Titan-Series Rider</div>
-                    <img src="/assets/img/service/new-ride-on-scrubber.png" className="hp-spec-img" alt="Scrubber" />
+                    <img src="/assets/img/service/new-ride-on-scrubber-clean.png" className="hp-spec-img" alt="Scrubber" />
                     <ul className="hp-spec-list">
                       <li>Sweep path: <span>900 mm</span></li>
                       <li>Recovery tank: <span>150 L</span></li>
@@ -545,7 +530,7 @@ export default function Home() {
                   <div className="hp-spec-card hp-spec-card-right hp-reveal delay-4">
                     <div className="hp-spec-title">Cleantech Vacuum</div>
                     <div className="hp-spec-name">Industrial Wet & Dry</div>
-                    <img src="/assets/img/service/new-vacuum-cleaner.png" className="hp-spec-img" alt="Vacuum" style={{ height: '70px' }} />
+                    <img src="/assets/img/service/new-vacuum-cleaner-clean.png" className="hp-spec-img" alt="Vacuum" style={{ height: '70px' }} />
                     <ul className="hp-spec-list">
                       <li>Capacity: <span>80 L</span></li>
                       <li>Suction: <span>250 mBar</span></li>
@@ -554,7 +539,7 @@ export default function Home() {
                   </div>
 
                   {/* Main Machine on Podium */}
-                  <img src="/assets/img/service/new-ride-on-scrubber.png" className="hp-podium-machine" alt="Ride-On Scrubber" />
+                  <img src="/assets/img/service/new-ride-on-scrubber-clean.png" className="hp-podium-machine" alt="Ride-On Scrubber" />
 
                   {/* Podium Base */}
                   <div className="hp-podium-base hp-reveal">

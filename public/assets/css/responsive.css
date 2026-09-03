@@ -581,3 +581,45 @@
   }
 }
 
+/* --------------------------------------------------------
+   23. GLOBAL TYPOGRAPHY OVERRIDES (Inline Style Fixes)
+   -------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  /* Enforce fluid typography to override hardcoded inline styles */
+  .premium-sales-grid h2, .cta-box h2, .tp-section-title-two, h2.tp-section-title {
+    font-size: clamp(24px, 5vw, 32px) !important;
+  }
+  
+  .premium-sales-grid span[style*="48px"] {
+    font-size: 32px !important;
+  }
+  
+  /* Fix product page grids */
+  .premium-sales-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+  
+  .premium-sales-grid > div {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    padding: 20px !important;
+  }
+  
+  .premium-sales-grid > div:first-child {
+    min-height: auto !important;
+    padding: 15px 20px !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .premium-sales-grid > div:first-child span {
+    margin-top: 0 !important;
+  }
+  
+  .premium-sales-grid > div:last-child {
+    border-bottom: none !important;
+  }
+}
