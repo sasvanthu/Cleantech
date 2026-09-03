@@ -231,23 +231,23 @@ export default function Home() {
           display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;
         }
         @media (max-width: 991px) {
-          .hp-hero { padding-top: 85px; padding-bottom: 15px; text-align: center; }
+          .hp-hero { padding-top: 85px; padding-bottom: 15px; text-align: center; min-height: auto; }
           .hp-hero .ct-container { padding-left: 20px !important; padding-right: 20px !important; }
           .hp-hero-pill { margin: 0 auto 20px; padding: 6px 16px; }
           .hp-hero-title { font-size: 32px; margin-bottom: 12px; }
           .hp-hero-sub { font-size: 14px; margin: 0 auto 24px; line-height: 1.5; }
           .hp-advantage-block { font-size: 20px; text-align: center; margin: 0 auto 30px; }
-          .hp-hero-btns { flex-direction: column; width: 100%; margin: 0 auto 30px; align-items: stretch; gap: 12px; }
+          .hp-hero-btns { flex-direction: column; width: 100%; margin: 0 auto 10px; align-items: stretch; gap: 12px; }
           .hp-btn-primary, .hp-btn-ghost { width: 100%; justify-content: center; }
-          .hp-podium-wrapper { height: 350px; margin-top: 0; }
-          .hp-podium-base { bottom: 40px; width: 100%; }
-          .hp-podium-layer-1 { height: 100px; }
-          .hp-podium-layer-2 { height: 80px; bottom: 20px; }
-          .hp-podium-layer-3 { height: 60px; bottom: 40px; border-width: 1px; }
-          .hp-podium-glow { bottom: 35px; }
-          .hp-podium-machine { bottom: 70px; width: 85%; max-width: 280px; }
+          .hp-podium-wrapper { height: 220px; margin-top: 0; overflow: hidden; }
+          .hp-podium-base { bottom: 0px; width: 100%; }
+          .hp-podium-layer-1 { height: 80px; }
+          .hp-podium-layer-2 { height: 60px; bottom: 12px; }
+          .hp-podium-layer-3 { height: 45px; bottom: 22px; border-width: 1px; }
+          .hp-podium-glow { bottom: 18px; }
+          .hp-podium-machine { bottom: 35px; width: 80%; max-width: 250px; }
           .hp-spec-card { display: none; }
-          .hp-circuit-lines { width: 100%; height: 300px; bottom: -50px; }
+          .hp-circuit-lines { display: none; }
         }
 
         /* ---- Stats Bar ---- */

@@ -22,8 +22,8 @@ export default function Header() {
     <>
       <header className="ct-main-header">
         <div style={{ flexShrink: 0, display: 'flex', alignItems: 'center' }}>
-          <Link href="/" style={{ display: 'block' }}>
-            <img src="/logo.jpeg" alt="Cleantech" style={{ height: '44px', maxHeight: '44px', width: 'auto', maxWidth: '180px', display: 'block', borderRadius: '500px' }} />
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', lineHeight: 0 }}>
+            <img src="/logo.jpeg" alt="Cleantech" style={{ height: '44px', maxHeight: '44px', width: 'auto', maxWidth: '180px', display: 'block', borderRadius: '500px', verticalAlign: 'middle' }} />
           </Link>
         </div>
 
