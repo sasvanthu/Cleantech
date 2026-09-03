@@ -188,9 +188,6 @@ export default function Home() {
           width: 54%; max-width: 420px; z-index: 4;
           filter: drop-shadow(0 30px 20px rgba(0,0,0,0.8));
           animation: floatPodium 6s ease-in-out infinite;
-          mix-blend-mode: screen;
-          mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 98%);
-          -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 98%);
         }
         @keyframes floatPodium { 0%,100%{ transform: translateX(-50%) translateY(0); } 50%{ transform: translateX(-50%) translateY(-15px); } }
 
@@ -208,7 +205,7 @@ export default function Home() {
         
         .hp-spec-title { font-size: 11.5px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
         .hp-spec-name { font-size: 15.5px; font-weight: 700; color: #fff; margin-bottom: 12px; }
-        .hp-spec-img { width: 100%; height: 100px; object-fit: contain; margin-bottom: 12px; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); mix-blend-mode: screen; }
+        .hp-spec-img { width: 100%; height: 100px; object-fit: contain; margin-bottom: 12px; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); }
         .hp-spec-list { list-style: none; padding: 0; margin: 0; font-size: 11px; color: rgba(255,255,255,0.7); }
         .hp-spec-list li { display: flex; justify-content: space-between; margin-bottom: 5px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 4px; }
         .hp-spec-list li span { color: #fff; font-weight: 600; }
@@ -504,7 +501,7 @@ export default function Home() {
                   <div className="hp-spec-card hp-spec-card-left hp-reveal delay-3">
                     <div className="hp-spec-title">Scrubber</div>
                     <div className="hp-spec-name">Cleantech Titan-Series Rider</div>
-                    <img src="/assets/img/service/new-ride-on-scrubber.png" className="hp-spec-img" alt="Scrubber" />
+                    <img src="/assets/img/service/new-ride-on-scrubber-clean.png" className="hp-spec-img" alt="Scrubber" />
                     <ul className="hp-spec-list">
                       <li>Sweep path: <span>900 mm</span></li>
                       <li>Recovery tank: <span>150 L</span></li>
@@ -515,7 +512,7 @@ export default function Home() {
                   <div className="hp-spec-card hp-spec-card-right hp-reveal delay-4">
                     <div className="hp-spec-title">Cleantech Vacuum</div>
                     <div className="hp-spec-name">Industrial Wet & Dry</div>
-                    <img src="/assets/img/service/new-vacuum-cleaner.png" className="hp-spec-img" alt="Vacuum" style={{ height: '70px' }} />
+                    <img src="/assets/img/service/new-vacuum-cleaner-clean.png" className="hp-spec-img" alt="Vacuum" style={{ height: '70px' }} />
                     <ul className="hp-spec-list">
                       <li>Capacity: <span>80 L</span></li>
                       <li>Suction: <span>250 mBar</span></li>
@@ -524,7 +521,7 @@ export default function Home() {
                   </div>
 
                   {/* Main Machine on Podium */}
-                  <img src="/assets/img/service/new-ride-on-scrubber.png" className="hp-podium-machine" alt="Ride-On Scrubber" />
+                  <img src="/assets/img/service/new-ride-on-scrubber-clean.png" className="hp-podium-machine" alt="Ride-On Scrubber" />
 
                   {/* Podium Base */}
                   <div className="hp-podium-base hp-reveal">
