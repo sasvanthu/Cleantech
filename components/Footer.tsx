@@ -31,8 +31,8 @@ export default function Footer() {
           <div className="ct-footer-grid">
             {/* Brand */}
             <div>
-              <Link href="/" style={{ display: 'inline-block', marginBottom: '14px', width: '100%', maxWidth: '300px' }}>
-                <img src="/logo.jpeg" alt="Cleantech" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '500px' }} />
+              <Link href="/" style={{ display: 'inline-block', marginBottom: '14px', width: '100%', maxWidth: '200px' }}>
+                <img src="/logo.jpeg" alt="Cleantech" style={{ width: '180px', maxWidth: '100%', height: 'auto', display: 'block', borderRadius: '500px' }} />
               </Link>
               <p className="ct-footer-desc">
                 Chennai's trusted partner for professional cleaning equipment sales and service.

@@ -40,7 +40,7 @@
 html { scroll-behavior: smooth; }
 body {
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: var(--ct-text);
   background: var(--ct-white);
   line-height: 1.7;
@@ -58,15 +58,15 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 /* -------- Layout Utility -------- */
 .ct-container {
-  max-width: 1200px;
+  max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 36px;
 }
 @media(max-width:768px){ .ct-container{ padding: 0 20px; } }
 
-.ct-section       { padding: 96px 0; }
-.ct-section-sm    { padding: 60px 0; }
+.ct-section       { padding: 106px 0; }
+.ct-section-sm    { padding: 66px 0; }
 .ct-bg-dark       { background: var(--ct-dark); }
 .ct-bg-dark-2     { background: var(--ct-dark-2); }
 .ct-bg-light      { background: var(--ct-light); }

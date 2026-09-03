@@ -15,28 +15,6 @@ export default function Home() {
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     revealEls.forEach((el) => obs.observe(el));
 
-    /* ---- Counter Animation ---- */
-    const nums = document.querySelectorAll('.ct-num');
-    let counted = false;
-    const cObs = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting && !counted) {
-          counted = true;
-          nums.forEach((num) => {
-            const target = parseInt(num.getAttribute('data-target') || '0', 10);
-            let start = 0, steps = 60, inc = target / steps;
-            const t = setInterval(() => {
-              start += inc;
-              if (start >= target) { num.textContent = target.toString(); clearInterval(t); }
-              else { num.textContent = Math.ceil(start).toString(); }
-            }, 1200 / steps);
-          });
-        }
-      });
-    }, { threshold: 0.3 });
-    const counterSection = document.querySelector('.hp-stats-bar');
-    if (counterSection) cObs.observe(counterSection);
-
     /* ---- 3D tilt on product cards ---- */
     const tiltCards = document.querySelectorAll('.hp-3d-card');
     tiltCards.forEach(card => {
@@ -54,7 +32,7 @@ export default function Home() {
       });
     });
 
-    return () => { obs.disconnect(); cObs.disconnect(); };
+    return () => { obs.disconnect(); };
   }, []);
 
   const products = [
@@ -104,7 +82,7 @@ export default function Home() {
           padding-bottom: 20px;
         }
         .hp-hero .ct-container {
-          max-width: 1400px !important;
+          max-width: 1540px !important;
           width: 100% !important;
           padding-left: 3% !important;
           padding-right: 3% !important;
@@ -139,34 +117,34 @@ export default function Home() {
 
         .hp-hero-title {
           font-family: 'Space Grotesk', sans-serif;
-          font-size: clamp(32px, 4.2vw, 56px);
+          font-size: clamp(35px, 4.6vw, 62px);
           font-weight: 900;
           color: #fff;
           line-height: 1.1;
           letter-spacing: -1px;
-          margin: 0 0 14px;
+          margin: 0 0 16px;
         }
         .hp-hero-title span { color: #FF6B00; }
         .hp-hero-title span.hp-title-orange { color: #FF6B00; }
         
         .hp-hero-sub {
-          font-size: 15px; color: rgba(255,255,255,0.7);
-          max-width: 520px; line-height: 1.55; margin-bottom: 24px;
+          font-size: 16.5px; color: rgba(255,255,255,0.7);
+          max-width: 570px; line-height: 1.55; margin-bottom: 26px;
         }
         
-        .hp-hero-btns { display: inline-flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+        .hp-hero-btns { display: inline-flex; align-items: center; gap: 18px; margin-bottom: 20px; }
         .hp-btn-primary {
-          background: #FF6B00; color: #fff; padding: 13px 26px;
-          font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
-          border-radius: 50px; text-decoration: none; display: flex; align-items: center; gap: 8px;
+          background: #FF6B00; color: #fff; padding: 14px 28px;
+          font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+          border-radius: 50px; text-decoration: none; display: flex; align-items: center; gap: 9px;
           transition: 0.3s; box-shadow: 0 10px 20px rgba(255,107,0,0.3); border: none;
         }
         .hp-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(255,107,0,0.4); color: #fff; }
         .hp-btn-ghost {
-          background: rgba(255,255,255,0.05); color: #fff; padding: 13px 26px;
-          font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+          background: rgba(255,255,255,0.05); color: #fff; padding: 14px 28px;
+          font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
           border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); text-decoration: none;
-          display: flex; align-items: center; gap: 8px; transition: 0.3s; backdrop-filter: blur(10px);
+          display: flex; align-items: center; gap: 9px; transition: 0.3s; backdrop-filter: blur(10px);
         }
         .hp-btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
 
@@ -174,7 +152,7 @@ export default function Home() {
         .hp-podium-wrapper {
           position: relative;
           height: 100%;
-          min-height: 480px;
+          min-height: 520px;
           width: 100%;
           display: flex; align-items: center; justify-content: center;
           margin-top: 0px;
@@ -207,7 +185,7 @@ export default function Home() {
 
         .hp-podium-machine {
           position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
-          width: 50%; max-width: 380px; z-index: 4;
+          width: 54%; max-width: 420px; z-index: 4;
           filter: drop-shadow(0 30px 20px rgba(0,0,0,0.8));
           animation: floatPodium 6s ease-in-out infinite;
         }
@@ -217,19 +195,19 @@ export default function Home() {
           position: absolute;
           background: rgba(8,12,24,0.85); backdrop-filter: blur(20px);
           border: 1px solid rgba(255,107,0,0.2); border-radius: 16px;
-          padding: 14px 16px; width: 185px; z-index: 10;
+          padding: 15px 18px; width: 205px; z-index: 10;
           box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,107,0,0.05);
           transition: 0.3s;
         }
         .hp-spec-card:hover { transform: translateY(-5px); border-color: rgba(255,107,0,0.8); box-shadow: 0 20px 40px rgba(255,107,0,0.15); }
-        .hp-spec-card-left { top: 8%; left: 2%; }
-        .hp-spec-card-right { top: 4%; right: 1%; }
+        .hp-spec-card-left { top: 8%; left: 0%; }
+        .hp-spec-card-right { top: 4%; right: 0%; }
         
-        .hp-spec-title { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-        .hp-spec-name { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 12px; }
-        .hp-spec-img { width: 100%; height: 90px; object-fit: contain; margin-bottom: 12px; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); }
-        .hp-spec-list { list-style: none; padding: 0; margin: 0; font-size: 10px; color: rgba(255,255,255,0.7); }
-        .hp-spec-list li { display: flex; justify-content: space-between; margin-bottom: 4px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 4px; }
+        .hp-spec-title { font-size: 11.5px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+        .hp-spec-name { font-size: 15.5px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+        .hp-spec-img { width: 100%; height: 100px; object-fit: contain; margin-bottom: 12px; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); }
+        .hp-spec-list { list-style: none; padding: 0; margin: 0; font-size: 11px; color: rgba(255,255,255,0.7); }
+        .hp-spec-list li { display: flex; justify-content: space-between; margin-bottom: 5px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 4px; }
         .hp-spec-list li span { color: #fff; font-weight: 600; }
 
         /* Action Thumbs */
@@ -285,24 +263,28 @@ export default function Home() {
         }
         .hp-stat-num {
           font-family: 'Space Grotesk', sans-serif;
-          font-size: 38px; font-weight: 900; color: #fff; line-height: 1;
+          font-size: 42px; font-weight: 900; color: #fff; line-height: 1;
         }
         .hp-stat-num span { color: #FF6B00; }
-        .hp-stat-label { font-size: 11px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 4px; }
-        @media(max-width:768px) { 
+        .hp-stat-label { font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 5px; }
+        @media(max-width:991px) { 
           .hp-stats-grid { grid-template-columns: repeat(2,1fr); gap: 15px; padding: 0 16px; } 
-          .hp-stat-num { font-size: 28px; }
+          .hp-stat-num { font-size: 32px; }
           .hp-stat-label { font-size: 10px; letter-spacing: 1px; }
         }
 
         /* ---- Core Business ---- */
-        .hp-bento-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .hp-bento-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
         @media(max-width:900px) { .hp-bento-grid { grid-template-columns: 1fr; } }
         .hp-bento-card {
           background: #111; border: 1px solid rgba(255,255,255,0.07);
-          border-radius: 24px; padding: 48px;
+          border-radius: 24px; padding: 52px;
           transition: border-color 0.3s ease, transform 0.3s ease;
           position: relative; overflow: hidden;
+        }
+        @media(max-width:768px) {
+          .hp-bento-card { padding: 24px 20px !important; border-radius: 16px !important; }
+          .hp-bento-num { font-size: 50px !important; top: 15px !important; right: 15px !important; }
         }
         .hp-bento-card:hover { border-color: rgba(255,107,0,0.3); transform: translateY(-4px); }
         .hp-bento-card::before {
@@ -563,19 +545,19 @@ export default function Home() {
           <div className="ct-container">
             <div className="hp-stats-grid">
               <div className="hp-reveal">
-                <div className="hp-stat-num"><span className="ct-num" data-target="15">0</span><span>+</span></div>
+                <div className="hp-stat-num"><span>15</span><span>+</span></div>
                 <div className="hp-stat-label">Years Experience</div>
               </div>
               <div className="hp-reveal delay-1">
-                <div className="hp-stat-num"><span className="ct-num" data-target="500">0</span><span>+</span></div>
+                <div className="hp-stat-num"><span>500</span><span>+</span></div>
                 <div className="hp-stat-label">Happy Clients</div>
               </div>
               <div className="hp-reveal delay-2">
-                <div className="hp-stat-num"><span className="ct-num" data-target="10">0</span><span>+</span></div>
+                <div className="hp-stat-num"><span>10</span><span>+</span></div>
                 <div className="hp-stat-label">Machine Brands</div>
               </div>
               <div className="hp-reveal delay-3">
-                <div className="hp-stat-num"><span className="ct-num" data-target="24">0</span><span>/7</span></div>
+                <div className="hp-stat-num"><span>24</span><span>/7</span></div>
                 <div className="hp-stat-label">Support Available</div>
               </div>
             </div>

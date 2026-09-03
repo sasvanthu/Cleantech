@@ -582,13 +582,13 @@
 }
 
 /* --------------------------------------------------------
-   23. GLOBAL TYPOGRAPHY OVERRIDES (Inline Style Fixes)
+   23. GLOBAL TYPOGRAPHY & GRID OVERRIDES (Inline Style Fixes)
    -------------------------------------------------------- */
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* Enforce fluid typography to override hardcoded inline styles */
   .premium-sales-grid h2, .cta-box h2, .tp-section-title-two, h2.tp-section-title {
-    font-size: clamp(24px, 5vw, 32px) !important;
+    font-size: clamp(22px, 5vw, 32px) !important;
   }
   
   .premium-sales-grid span[style*="48px"] {

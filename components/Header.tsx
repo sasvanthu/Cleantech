@@ -23,7 +23,7 @@ export default function Header() {
       <header className="ct-main-header">
         <div style={{ flexShrink: 0, display: 'flex', alignItems: 'center' }}>
           <Link href="/" style={{ display: 'block' }}>
-            <img src="/logo.jpeg" alt="Cleantech" style={{ height: '44px', width: 'auto', display: 'block', maxWidth: 'none', borderRadius: '500px' }} />
+            <img src="/logo.jpeg" alt="Cleantech" style={{ height: '44px', maxHeight: '44px', width: 'auto', maxWidth: '180px', display: 'block', borderRadius: '500px' }} />
           </Link>
         </div>
 
@@ -115,7 +115,7 @@ export default function Header() {
       }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
           <Link href="/" onClick={closeDrawer}>
-            <img src="/logo.jpeg" alt="Cleantech" style={{ height: '38px', width: 'auto', display: 'block', borderRadius: '500px' }} />
+            <img src="/logo.jpeg" alt="Cleantech" style={{ height: '38px', maxHeight: '38px', width: 'auto', maxWidth: '150px', display: 'block', borderRadius: '500px' }} />
           </Link>
           <button onClick={closeDrawer} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', color: '#fff', width: '36px', height: '36px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontSize: '18px' }}>
             &times;
