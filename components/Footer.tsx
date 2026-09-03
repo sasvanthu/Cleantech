@@ -35,7 +35,7 @@ export default function Footer() {
                 <img src="/logo.jpeg" alt="Cleantech" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '500px' }} />
               </Link>
               <p className="ct-footer-desc">
-                Chennai's trusted partner for professional cleaning equipment sales and service. 
+                Chennai's trusted partner for professional cleaning equipment sales and service.
                 We supply genuine machines and deliver expert technical support for commercial and industrial facilities.
               </p>
             </div>
@@ -94,26 +94,12 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* Floating Social Sidebar */}
-      <div className="ct-floating-sidebar">
-        <a href="https://wa.me/919710148218" target="_blank" rel="noopener noreferrer" className="ct-sidebar-btn ct-sidebar-wa" aria-label="WhatsApp">
-          <i className="fab fa-whatsapp"></i>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" className="ct-sidebar-btn ct-sidebar-fb" aria-label="Facebook">
-          <i className="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" className="ct-sidebar-btn ct-sidebar-ig" aria-label="Instagram">
-          <i className="fab fa-instagram"></i>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" className="ct-sidebar-btn ct-sidebar-li" aria-label="LinkedIn">
-          <i className="fab fa-linkedin-in"></i>
-        </a>
-      </div>
+
 
       {/* Back to Top */}
-      <button 
-        className={`ct-back-top ${showBackTop ? 'visible' : ''}`} 
-        onClick={scrollToTop} 
+      <button
+        className={`ct-back-top ${showBackTop ? 'visible' : ''}`}
+        onClick={scrollToTop}
         aria-label="Back to top"
       >
         <i className="fas fa-arrow-up"></i>

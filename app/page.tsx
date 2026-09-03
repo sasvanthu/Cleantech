@@ -102,7 +102,8 @@ export default function Home() {
 
   return (
     <>
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         /* ---- Reveal Animations ---- */
         .hp-reveal { opacity: 0; transform: translateY(32px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
         .hp-reveal.delay-1 { transition-delay: 0.1s; }
@@ -111,182 +112,201 @@ export default function Home() {
         .hp-reveal.delay-4 { transition-delay: 0.4s; }
         .hp-visible { opacity: 1; transform: translateY(0); }
 
-        /* ---- Hero ---- */
+        /* ---- Hero Redesign ---- */
         .hp-hero {
-          min-height: 100vh;
+          min-height: auto;
           background: #050810;
           position: relative;
           overflow: hidden;
           display: flex;
           align-items: center;
-          padding-top: 90px;
+          padding-top: 95px;
+          padding-bottom: 20px;
         }
-        .hp-hero-grid {
+        .hp-hero .ct-container {
+          max-width: 100% !important;
+          width: 100% !important;
+          padding-left: 4% !important;
+          padding-right: 4% !important;
+        }
+        .hp-hero-circuit-bg {
           position: absolute; inset: 0;
-          background-image: linear-gradient(rgba(0,87,255,0.04) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(0,87,255,0.04) 1px, transparent 1px);
-          background-size: 60px 60px;
+          background-image: 
+            radial-gradient(circle at 70% 80%, rgba(0, 212, 170, 0.15), transparent 50%),
+            radial-gradient(circle at 30% 30%, rgba(0, 87, 255, 0.1), transparent 50%),
+            repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 100px),
+            repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 100px);
+          background-size: 100% 100%, 100% 100%, 100px 100px, 100px 100px;
+          z-index: 0;
         }
-        .hp-orb {
-          position: absolute; border-radius: 50%;
-          filter: blur(100px); pointer-events: none;
+        /* Circuit lines decoration on floor */
+        .hp-circuit-lines {
+          position: absolute;
+          bottom: -100px; left: 50%; transform: translateX(-50%);
+          width: 1000px; height: 500px;
+          background: radial-gradient(ellipse at center, rgba(0,212,170,0.1) 0%, transparent 60%);
+          z-index: 1; pointer-events: none;
         }
-        .hp-orb-1 { width: 500px; height: 500px; background: rgba(0,87,255,0.18); top: -100px; left: -100px; animation: orbFloat1 8s ease-in-out infinite; }
-        .hp-orb-2 { width: 400px; height: 400px; background: rgba(255,107,0,0.12); bottom: -50px; right: -50px; animation: orbFloat2 10s ease-in-out infinite; }
-        .hp-orb-3 { width: 300px; height: 300px; background: rgba(0,212,170,0.07); top: 50%; right: 20%; animation: orbFloat3 7s ease-in-out infinite; }
-        @keyframes orbFloat1 { 0%,100%{ transform:translate(0,0) } 50%{ transform:translate(40px,30px) } }
-        @keyframes orbFloat2 { 0%,100%{ transform:translate(0,0) } 50%{ transform:translate(-30px,-40px) } }
-        @keyframes orbFloat3 { 0%,100%{ transform:translate(0,0) } 50%{ transform:translate(20px,-20px) } }
-
-        .hp-hero-pretag {
-          display: inline-flex; align-items: center; gap: 10px;
-          background: rgba(0,87,255,0.08); border: 1px solid rgba(0,87,255,0.2);
-          border-radius: 50px; padding: 6px 16px;
-          font-size: 12px; font-weight: 600; color: #4D8FFF;
-          letter-spacing: 1px; text-transform: uppercase;
-          margin-bottom: 28px;
+        .hp-hero-pill {
+          display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+          background: linear-gradient(180deg, #2A303C, #14171E);
+          border: 1px solid rgba(255,255,255,0.1);
+          border-radius: 50px; padding: 6px 18px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 2px 5px rgba(255,255,255,0.1);
+          margin-bottom: 20px;
         }
-        .hp-pulse-dot {
-          width: 7px; height: 7px; border-radius: 50%;
-          background: #4D8FFF;
-          animation: pulse 1.5s ease-in-out infinite;
-        }
-        @keyframes pulse { 0%,100%{ opacity:1; transform:scale(1) } 50%{ opacity:0.4; transform:scale(1.5) } }
+        .hp-hero-pill-text { font-size: 11px; font-weight: 700; color: #FF6B00; letter-spacing: 1px; }
 
         .hp-hero-title {
           font-family: 'Space Grotesk', sans-serif;
-          font-size: clamp(38px, 6vw, 76px);
+          font-size: clamp(38px, 4.8vw, 62px);
           font-weight: 900;
           color: #fff;
-          line-height: 1.05;
-          letter-spacing: -2px;
-          margin: 0 0 24px;
+          line-height: 1.1;
+          letter-spacing: -1px;
+          margin: 0 0 14px;
         }
-        .hp-title-orange { color: #FF6B00; }
-        .hp-title-blue { color: #4D8FFF; }
-        .hp-typewriter {
-          color: #FF6B00;
-          border-right: 3px solid #FF6B00;
-          padding-right: 4px;
-          animation: blink 0.8s step-end infinite;
-        }
-        @keyframes blink { 0%,100%{ border-color:#FF6B00 } 50%{ border-color:transparent } }
-
+        .hp-hero-title span { color: #FF6B00; }
+        .hp-hero-title span.hp-title-orange { color: #FF6B00; }
+        
         .hp-hero-sub {
-          font-size: 18px; color: rgba(255,255,255,0.55);
-          max-width: 500px; line-height: 1.8; margin-bottom: 36px;
+          font-size: 15px; color: rgba(255,255,255,0.7);
+          max-width: 520px; line-height: 1.55; margin-bottom: 24px;
         }
-
-        .hp-hero-btns { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+        
+        .hp-hero-btns { display: inline-flex; align-items: center; gap: 16px; margin-bottom: 20px; }
         .hp-btn-primary {
-          display: inline-flex; align-items: center; gap: 8px;
-          background: #FF6B00; color: #000; padding: 14px 30px;
-          font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
-          border-radius: 6px; border: none; cursor: pointer; text-decoration: none;
-          transition: all 0.3s ease;
+          background: #FF6B00; color: #fff; padding: 13px 26px;
+          font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+          border-radius: 50px; text-decoration: none; display: flex; align-items: center; gap: 8px;
+          transition: 0.3s; box-shadow: 0 10px 20px rgba(255,107,0,0.3); border: none;
         }
-        .hp-btn-primary:hover { background: #ff8c00; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,107,0,0.4); }
+        .hp-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(255,107,0,0.4); color: #fff; }
         .hp-btn-ghost {
-          display: inline-flex; align-items: center; gap: 8px;
-          background: transparent; color: #fff; padding: 14px 30px;
-          font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
-          border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); text-decoration: none;
-          transition: all 0.3s ease;
+          background: rgba(255,255,255,0.05); color: #fff; padding: 13px 26px;
+          font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+          border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); text-decoration: none;
+          display: flex; align-items: center; gap: 8px; transition: 0.3s; backdrop-filter: blur(10px);
         }
-        .hp-btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,0.05); }
+        .hp-btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
 
-        .hp-mini-stats { display: flex; gap: 32px; flex-wrap: wrap; }
-        .hp-mini-stat-num {
-          font-family: 'Space Grotesk', sans-serif;
-          font-size: 32px; font-weight: 900; color: #fff; line-height: 1;
-        }
-        .hp-mini-stat-num span { color: #FF6B00; }
-        .hp-mini-stat-label { font-size: 12px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
-
-        /* ---- 3D Floating Product ---- */
-        .hp-hero-visual {
+        /* ---- 3D Podium ---- */
+        .hp-podium-wrapper {
           position: relative;
-          height: 580px;
+          height: 420px; width: 100%;
           display: flex; align-items: center; justify-content: center;
-          perspective: 1000px;
+          margin-top: 0px;
         }
-        .hp-float-card {
-          position: absolute;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.08);
-          border-radius: 20px;
-          overflow: hidden;
-          backdrop-filter: blur(10px);
-          box-shadow: 0 30px 80px rgba(0,0,0,0.6);
-          transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        .hp-podium-base {
+          position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
+          width: 90%; height: 180px;
+          z-index: 1;
         }
-        .hp-float-main {
-          width: 340px; height: 280px;
-          top: 50%; left: 50%;
-          transform: translate(-50%,-50%) perspective(800px) rotateY(-8deg) rotateX(4deg);
-          animation: float3D 6s ease-in-out infinite;
-          z-index: 3;
+        .hp-podium-layer {
+          position: absolute; bottom: 0; left: 0; right: 0; margin: auto;
+          border-radius: 50%;
+          background: linear-gradient(180deg, #1A1F2B, #0B0E14);
+          border: 1px solid rgba(255,255,255,0.1);
+          box-shadow: 0 20px 50px rgba(0,0,0,0.8), inset 0 2px 10px rgba(255,255,255,0.1);
         }
-        .hp-float-main img { width: 100%; height: 100%; object-fit: cover; }
-        .hp-float-mini-1 {
-          width: 160px; height: 130px;
-          top: 10%; right: 5%;
-          transform: perspective(800px) rotateY(-15deg) rotateX(8deg);
-          animation: float3D2 7s ease-in-out infinite;
-          z-index: 2;
+        .hp-podium-layer-1 { width: 100%; height: 140px; bottom: 0; }
+        .hp-podium-layer-2 { width: 85%; height: 120px; bottom: 25px; background: linear-gradient(180deg, #242B3A, #141822); }
+        .hp-podium-layer-3 { 
+          width: 70%; height: 100px; bottom: 50px; 
+          background: linear-gradient(180deg, #2F3748, #1C2230);
+          border: 2px solid #FF6B00;
+          box-shadow: 0 0 30px rgba(255,107,0,0.4), inset 0 0 20px rgba(255,107,0,0.2);
         }
-        .hp-float-mini-1 img { width: 100%; height: 100%; object-fit: cover; }
-        .hp-float-mini-2 {
-          width: 140px; height: 110px;
-          bottom: 15%; left: 5%;
-          transform: perspective(800px) rotateY(10deg) rotateX(-6deg);
-          animation: float3D3 8s ease-in-out infinite;
-          z-index: 2;
-        }
-        .hp-float-mini-2 img { width: 100%; height: 100%; object-fit: cover; }
-        @keyframes float3D {
-          0%,100%{ transform:translate(-50%,-50%) perspective(800px) rotateY(-8deg) rotateX(4deg) translateY(0); }
-          50%{ transform:translate(-50%,-50%) perspective(800px) rotateY(-5deg) rotateX(2deg) translateY(-20px); }
-        }
-        @keyframes float3D2 {
-          0%,100%{ transform:perspective(800px) rotateY(-15deg) rotateX(8deg) translateY(0); }
-          50%{ transform:perspective(800px) rotateY(-12deg) rotateX(5deg) translateY(-15px); }
-        }
-        @keyframes float3D3 {
-          0%,100%{ transform:perspective(800px) rotateY(10deg) rotateX(-6deg) translateY(0); }
-          50%{ transform:perspective(800px) rotateY(8deg) rotateX(-4deg) translateY(-10px); }
+        
+        .hp-podium-glow {
+          position: absolute; bottom: 45px; left: 15%; right: 15%; height: 4px;
+          background: #FF6B00; border-radius: 50%; filter: blur(4px); z-index: 2;
         }
 
-        /* Badge on float card */
-        .hp-float-badge {
-          position: absolute; top: 12px; right: 12px;
-          background: #FF6B00; color: #000; font-size: 11px; font-weight: 700;
-          padding: 4px 12px; border-radius: 50px;
+        .hp-podium-machine {
+          position: absolute; bottom: 110px; left: 50%; transform: translateX(-50%);
+          width: 70%; max-width: 450px; z-index: 4;
+          filter: drop-shadow(0 40px 30px rgba(0,0,0,0.8));
+          animation: floatPodium 6s ease-in-out infinite;
         }
-        .hp-float-tag {
-          position: absolute; bottom: 0; left: 0; right: 0;
-          background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-          padding: 20px 16px 12px;
-          color: #fff; font-size: 14px; font-weight: 600;
+        @keyframes floatPodium { 0%,100%{ transform: translateX(-50%) translateY(0); } 50%{ transform: translateX(-50%) translateY(-15px); } }
+
+        /* Spec Cards */
+        .hp-spec-card {
+          position: absolute;
+          background: rgba(16,24,39,0.7); backdrop-filter: blur(15px);
+          border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;
+          padding: 16px; width: 180px; z-index: 5;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+          transition: 0.3s;
+        }
+        .hp-spec-card:hover { transform: translateY(-5px); border-color: rgba(255,107,0,0.5); }
+        .hp-spec-card-left { top: 10%; left: -5%; }
+        .hp-spec-card-right { top: -5%; right: 0%; }
+        
+        .hp-spec-title { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+        .hp-spec-name { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+        .hp-spec-img { width: 100%; height: 90px; object-fit: contain; margin-bottom: 12px; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); }
+        .hp-spec-list { list-style: none; padding: 0; margin: 0; font-size: 10px; color: rgba(255,255,255,0.7); }
+        .hp-spec-list li { display: flex; justify-content: space-between; margin-bottom: 4px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 4px; }
+        .hp-spec-list li span { color: #fff; font-weight: 600; }
+
+        /* Action Thumbs */
+        .hp-action-thumbs-wrap {
+          position: absolute; bottom: 0; right: 10%; z-index: 5;
+          display: flex; align-items: center; gap: 16px;
+        }
+        .hp-action-text {
+          font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.6);
+          text-transform: uppercase; letter-spacing: 1px; max-width: 100px; text-align: right; line-height: 1.4;
+        }
+        .hp-thumb-circle {
+          width: 60px; height: 60px; border-radius: 50%;
+          border: 2px solid rgba(255,255,255,0.2); overflow: hidden;
+          position: relative; cursor: pointer; transition: 0.3s;
+        }
+        .hp-thumb-circle:hover { border-color: #4D8FFF; transform: scale(1.1); }
+        .hp-thumb-circle img { width: 100%; height: 100%; object-fit: cover; }
+        .hp-thumb-play {
+          position: absolute; inset: 0; background: rgba(0,0,0,0.4);
+          display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;
+        }
+        @media (max-width: 991px) {
+          .hp-hero { padding-top: 120px; padding-bottom: 40px; text-align: center; }
+          .hp-hero-pill { margin: 0 auto 30px; }
+          .hp-hero-title { font-size: 36px; }
+          .hp-hero-sub { font-size: 15px; margin: 0 auto 36px; }
+          .hp-advantage-block { font-size: 20px; text-align: center; margin: 0 auto 40px; }
+          .hp-hero-btns { flex-direction: column; width: 100%; margin: 0 auto; align-items: stretch; }
+          .hp-btn-req, .hp-btn-exp { width: 100%; justify-content: center; }
+          .hp-podium-wrapper { height: 400px; margin-top: 20px; }
+          .hp-podium-base { bottom: 40px; }
+          .hp-podium-layer-1 { height: 100px; }
+          .hp-podium-layer-2 { height: 80px; bottom: 20px; }
+          .hp-podium-layer-3 { height: 60px; bottom: 40px; }
+          .hp-podium-glow { bottom: 35px; }
+          .hp-podium-machine { bottom: 70px; max-width: 250px; }
+          .hp-spec-card { display: none; } /* Hide floating cards on mobile to prevent overflow */
+          .hp-circuit-lines { width: 100%; height: 300px; bottom: -50px; }
         }
 
         /* ---- Stats Bar ---- */
         .hp-stats-bar {
-          background: #0a0a0a;
-          border-top: 1px solid rgba(255,255,255,0.05);
-          border-bottom: 1px solid rgba(255,255,255,0.05);
-          padding: 50px 0;
+          background: #050810;
+          border-top: 1px solid rgba(255,255,255,0.06);
+          border-bottom: 1px solid rgba(255,255,255,0.06);
+          padding: 25px 0;
         }
         .hp-stats-grid {
           display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
-          max-width: 900px; margin: 0 auto; text-align: center;
+          max-width: 1100px; margin: 0 auto; text-align: center;
         }
         .hp-stat-num {
           font-family: 'Space Grotesk', sans-serif;
-          font-size: 50px; font-weight: 900; color: #fff; line-height: 1;
+          font-size: 42px; font-weight: 900; color: #fff; line-height: 1;
         }
         .hp-stat-num span { color: #FF6B00; }
-        .hp-stat-label { font-size: 13px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 8px; }
+        .hp-stat-label { font-size: 12px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 6px; }
         @media(max-width:768px) { .hp-stats-grid { grid-template-columns: repeat(2,1fr); } }
 
         /* ---- Core Business ---- */
@@ -474,32 +494,29 @@ export default function Home() {
          ══════════════════════════════════════ */}
       <main>
         <section className="hp-hero" aria-label="Cleantech Industrial Cleaning Equipment Chennai Hero">
-          <div className="hp-hero-grid"></div>
-          <div className="hp-orb hp-orb-1"></div>
-          <div className="hp-orb hp-orb-2"></div>
-          <div className="hp-orb hp-orb-3"></div>
+          <div className="hp-hero-circuit-bg"></div>
+          <div className="hp-circuit-lines"></div>
 
           <div className="ct-container" style={{ position: 'relative', zIndex: 2, width: '100%' }}>
-            <div className="row align-items-center" style={{ minHeight: '85vh', padding: '40px 0' }}>
+            <div className="row align-items-center">
 
-              {/* Left */}
-              <div className="col-lg-6">
-                <div className="hp-hero-pretag">
-                  <span className="hp-pulse-dot"></span>
-                  15+ Years · Trusted in Chennai
+              {/* Left Column */}
+              <div className="col-lg-5">
+                <div className="hp-hero-pill hp-reveal delay-1">
+                  <span className="hp-hero-pill-text">15+ YEARS · TRUSTED IN CHENNAI</span>
                 </div>
 
-                <h1 className="hp-hero-title">
+                <h1 className="hp-hero-title hp-reveal delay-2">
                   Chennai's #1<br />
-                  Cleaning <span className="hp-title-orange">Machine</span><br />
+                  Cleaning <span className="hp-title-orange">Machines</span><br />
                   <span ref={typewriterRef} id="ctTypewriter" className="hp-typewriter"></span>
                 </h1>
 
-                <p className="hp-hero-sub">
-                  We supply genuine industrial scrubbers, sweepers, pressure washers &amp; vacuums — plus expert AMC, repair &amp; spare parts service across Tamil Nadu.
+                <p className="hp-hero-sub hp-reveal delay-3">
+                  We supply genuine industrial scrubbers, sweepers, high-pressure washers &amp; commercial vacuums across Tamil Nadu. Empowering businesses with top-tier cleaning machinery, comprehensive AMC coverage, rapid repair support, and authentic spare parts.
                 </p>
 
-                <div className="hp-hero-btns">
+                <div className="hp-hero-btns hp-reveal delay-4">
                   <a href="tel:+917338882034" className="hp-btn-primary" aria-label="Call Cleantech Now">
                     <i className="fas fa-phone-alt"></i> Call Now
                   </a>
@@ -507,43 +524,46 @@ export default function Home() {
                     View Products <i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
-
-                <div className="hp-mini-stats">
-                  <div>
-                    <div className="hp-mini-stat-num">15<span>+</span></div>
-                    <div className="hp-mini-stat-label">Yrs Experience</div>
-                  </div>
-                  <div>
-                    <div className="hp-mini-stat-num">500<span>+</span></div>
-                    <div className="hp-mini-stat-label">Happy Clients</div>
-                  </div>
-                  <div>
-                    <div className="hp-mini-stat-num">10<span>+</span></div>
-                    <div className="hp-mini-stat-label">Brands</div>
-                  </div>
-                  <div>
-                    <div className="hp-mini-stat-num">24<span>/7</span></div>
-                    <div className="hp-mini-stat-label">Support</div>
-                  </div>
-                </div>
               </div>
 
-              {/* Right: 3D Floating Machine Cards */}
-              <div className="col-lg-6">
-                <div className="hp-hero-visual">
-                  <div className="hp-float-card hp-float-main">
-                    <img src="/assets/img/service/new-ride-on-scrubber.png" alt="Heavy Duty Ride-On Scrubber Machine Chennai" />
-                    <span className="hp-float-badge">Best Seller</span>
-                    <div className="hp-float-tag">Ride-On Scrubber Dryer</div>
+              {/* Right Column: 3D Podium */}
+              <div className="col-lg-7">
+                <div className="hp-podium-wrapper">
+
+                  {/* Floating Spec Cards */}
+                  <div className="hp-spec-card hp-spec-card-left hp-reveal delay-3">
+                    <div className="hp-spec-title">Scrubber</div>
+                    <div className="hp-spec-name">Cleantech Titan-Series Rider</div>
+                    <img src="/assets/img/service/new-ride-on-scrubber.png" className="hp-spec-img" alt="Scrubber" />
+                    <ul className="hp-spec-list">
+                      <li>Sweep path: <span>900 mm</span></li>
+                      <li>Recovery tank: <span>150 L</span></li>
+                      <li>Scrubbing speed: <span>240 RPM</span></li>
+                    </ul>
                   </div>
-                  <div className="hp-float-card hp-float-mini-1">
-                    <img src="/assets/img/service/new-auto-scrubber.png" alt="Auto Scrubber Machine" />
-                    <div className="hp-float-tag" style={{ fontSize: '12px' }}>Auto Scrubber</div>
+
+                  <div className="hp-spec-card hp-spec-card-right hp-reveal delay-4">
+                    <div className="hp-spec-title">Cleantech Vacuum</div>
+                    <div className="hp-spec-name">Industrial Wet & Dry</div>
+                    <img src="/assets/img/service/new-vacuum-cleaner.png" className="hp-spec-img" alt="Vacuum" style={{ height: '70px' }} />
+                    <ul className="hp-spec-list">
+                      <li>Capacity: <span>80 L</span></li>
+                      <li>Suction: <span>250 mBar</span></li>
+                      <li>Motor: <span>3000 W</span></li>
+                    </ul>
                   </div>
-                  <div className="hp-float-card hp-float-mini-2">
-                    <img src="/assets/img/service/new-vacuum-cleaner.png" alt="Industrial Vacuum Cleaner" />
-                    <div className="hp-float-tag" style={{ fontSize: '12px' }}>Industrial Vacuum</div>
+
+                  {/* Main Machine on Podium */}
+                  <img src="/assets/img/service/new-ride-on-scrubber.png" className="hp-podium-machine" alt="Ride-On Scrubber" />
+
+                  {/* Podium Base */}
+                  <div className="hp-podium-base hp-reveal">
+                    <div className="hp-podium-layer hp-podium-layer-1"></div>
+                    <div className="hp-podium-layer hp-podium-layer-2"></div>
+                    <div className="hp-podium-layer hp-podium-layer-3"></div>
+                    <div className="hp-podium-glow"></div>
                   </div>
+
                 </div>
               </div>
 
@@ -689,7 +709,7 @@ export default function Home() {
             <div className="hp-testi-grid">
               <article className="hp-testi-card hp-reveal">
                 <div className="hp-testi-stars">
-                  {[1,2,3,4,5].map(s=><i key={s} className="fas fa-star"></i>)}
+                  {[1, 2, 3, 4, 5].map(s => <i key={s} className="fas fa-star"></i>)}
                 </div>
                 <p className="hp-testi-text">"We bought commercial scrubber dryers from Cleantech for our Chennai warehouse. Their cleaning equipment is top-notch, and the support was excellent from delivery to setup."</p>
                 <div className="hp-testi-author">
@@ -703,7 +723,7 @@ export default function Home() {
               </article>
               <article className="hp-testi-card hp-reveal delay-1">
                 <div className="hp-testi-stars">
-                  {[1,2,3,4,5].map(s=><i key={s} className="fas fa-star"></i>)}
+                  {[1, 2, 3, 4, 5].map(s => <i key={s} className="fas fa-star"></i>)}
                 </div>
                 <p className="hp-testi-text">"As a factory owner, finding reliable industrial cleaning equipment was crucial. Cleantech provides genuine machines, fair pricing, and quick technical support. Our AMC has kept equipment running with zero downtime."</p>
                 <div className="hp-testi-author">
@@ -717,7 +737,7 @@ export default function Home() {
               </article>
               <article className="hp-testi-card hp-reveal delay-2">
                 <div className="hp-testi-stars">
-                  {[1,2,3,4,5].map(s=><i key={s} className="fas fa-star"></i>)}
+                  {[1, 2, 3, 4, 5].map(s => <i key={s} className="fas fa-star"></i>)}
                 </div>
                 <p className="hp-testi-text">"We bought a commercial high pressure washer and an industrial vacuum cleaner through Cleantech. The team helped us choose the right model and their after-sales service has been incredibly professional."</p>
                 <div className="hp-testi-author">
