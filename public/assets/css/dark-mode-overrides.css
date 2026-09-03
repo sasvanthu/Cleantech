@@ -1,0 +1,207 @@
+
+/* ======================================================
+   GLOBAL DARK THEME OVERRIDES (Next.js Refactor)
+   ====================================================== */
+body.ct-bg-dark {
+  background-color: var(--ct-dark);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Make typical sections transparent so they inherit body background */
+.white-bg, 
+.grey-bg,
+.tp-about-area-two, 
+.tp-feature-area-two, 
+.tp-testimonial-area, 
+.tp-cta-area-two,
+.tp-service-area-two,
+.tp-pricing-area,
+.tp-blog-area,
+.tp-custom-accordio-3,
+.accordion-item,
+section[style*="background: #fff"],
+section[style*="background: white"],
+section[style*="background-color: #fff"],
+section[style*="background-color: white"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Headings color in dark mode */
+h1, h2, h3, h4, h5, h6,
+.tp-section-title,
+.tp-section-title-two,
+.tp-section-title-three,
+.tp-feature-title,
+.heading-color-black,
+.tp-testimonial-author-text-name,
+.accordion-button {
+  color: #fff !important;
+}
+
+.tp-section-subtitle-three {
+  color: var(--ct-orange) !important;
+}
+
+/* Text and paragraphs */
+p, .tp-about-text-two p, .text-muted, .accordion-body {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Cards & Elements */
+.tp-feature,
+.premium-feature-card,
+.premium-trust-card,
+.tp-service-two,
+.tp-testimonial-single,
+.accordion-button,
+.accordion-collapse,
+.ct-contact-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.tp-feature:hover,
+.premium-feature-card:hover,
+.tp-service-two:hover,
+.ct-contact-card:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(0, 87, 255, 0.3) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(0, 87, 255, 0.15) !important;
+  color: var(--ct-blue) !important;
+}
+
+.tp-cta-two-text-title a {
+  color: #fff !important;
+}
+
+.tp-cta-two-text-title a:hover {
+  color: var(--ct-orange) !important;
+}
+
+/* Feature lists */
+.premium-feature-list li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Icons */
+.tp-feature-icon i,
+.premium-feature-icon i {
+  color: var(--ct-orange) !important;
+}
+
+/* Fix specific backgrounds */
+.tp-testimonial-bg {
+  background: transparent !important;
+}
+
+/* Fix Page Hero */
+.ct-page-hero {
+  background: var(--ct-dark);
+  position: relative;
+  overflow: hidden;
+  padding: 160px 0 80px;
+}
+.ct-page-hero-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 70% at 20% 50%, rgba(0,87,255,0.2) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 80% 30%, rgba(255,107,0,0.1) 0%, transparent 55%),
+    linear-gradient(160deg, #05080F 0%, #0A1225 100%);
+}
+.ct-page-hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,87,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,87,255,0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+.ct-page-hero-content { position: relative; z-index: 2; text-align: center; }
+.ct-page-breadcrumb {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  font-size: 13px; color: rgba(255,255,255,0.4);
+  margin-bottom: 24px;
+  font-family: 'Space Mono', monospace;
+}
+.ct-page-breadcrumb a { color: var(--ct-orange); }
+.ct-page-breadcrumb a:hover { color: #fff; }
+.ct-page-breadcrumb span { color: rgba(255,255,255,0.25); }
+.ct-page-hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(40px, 7vw, 72px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+.ct-page-hero h1 em { font-style: normal; color: var(--ct-orange); }
+.ct-page-hero p { font-size: 18px; color: rgba(255,255,255,0.5); max-width: 600px; margin: 0 auto; }
+
+/* ======================================================
+   NEW FLOATING PILL NAVBAR
+   ====================================================== */
+#ct-header {
+  top: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 90% !important;
+  max-width: 1200px !important;
+  border-radius: 50px !important;
+  background: rgba(12, 19, 36, 0.4) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 0 !important;
+}
+
+#ct-header.scrolled {
+  background: rgba(5, 8, 15, 0.85) !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.ct-navbar {
+  height: 70px !important;
+  border-bottom: none !important;
+  padding: 0 30px !important;
+}
+.ct-navbar::after { display: none !important; }
+
+/* Move topbar out of the way or hide it to focus on pill nav */
+.ct-topbar {
+  display: none !important;
+}
+
+/* Adjust Dropdown for Pill Nav */
+.ct-drop {
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: rgba(12, 19, 36, 0.95) !important;
+  backdrop-filter: blur(15px) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Responsive Pill Nav */
+@media(max-width:992px){
+  #ct-header { width: 95% !important; top: 10px !important; }
+  .ct-navbar { padding: 0 20px !important; height: 60px !important; }
+  .ct-logo a { font-size: 20px !important; }
+  .ct-burger { display: flex !important; }
+}
+
+
+/* ======================================================
+   BENTO GRID ASYMMETRIC ADDITIONS
+   ====================================================== */
+.ct-bento-wide {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
+  .ct-bento-wide { grid-column: span 1; }
+}
+
