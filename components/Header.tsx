@@ -23,7 +23,7 @@ export default function Header() {
       <header className="ct-main-header">
         <div style={{ flexShrink: 0, display: 'flex', alignItems: 'center' }}>
           <Link href="/" style={{ display: 'block' }}>
-            <img src="/logo.jpeg" alt="Cleantech" style={{ height: '44px', width: 'auto', display: 'block', maxWidth: 'none', borderRadius: '500px' }} />
+            <img src="/logo.png" alt="Cleantech" style={{ height: '36px', width: 'auto', display: 'block', maxWidth: 'none', objectFit: 'contain' }} />
           </Link>
         </div>
 
@@ -113,11 +113,11 @@ export default function Header() {
         padding: '30px 20px', display: 'flex', flexDirection: 'column',
         boxShadow: '-10px 0 30px rgba(0,0,0,0.5)', borderLeft: '1px solid rgba(255,255,255,0.05)'
       }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
-          <Link href="/">
-            <img src="/logo.jpeg" alt="Cleantech" style={{ height: '80px', width: 'auto', display: 'block', borderRadius: '500px' }} />
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px', paddingBottom: '15px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+          <Link href="/" onClick={closeDrawer} style={{ display: 'flex', alignItems: 'center' }}>
+            <img src="/logo.png" alt="Cleantech" style={{ height: '36px', width: 'auto', display: 'block', objectFit: 'contain' }} />
           </Link>
-          <button onClick={closeDrawer} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', color: '#fff', width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontSize: '20px' }}>
+          <button onClick={closeDrawer} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', color: '#fff', width: '36px', height: '36px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontSize: '18px' }} aria-label="Close menu">
             &times;
           </button>
         </div>
